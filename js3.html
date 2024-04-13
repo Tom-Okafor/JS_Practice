@@ -1,0 +1,19 @@
+<!-- Challenge 5 - JS
+
+Use JavaScript to change the font size and
+
+color of the last paragraph in the div without 
+affecting any of the other paragraphs -->
+
+<p>don't change this paragraph</p>
+<div id="main">
+<p>don't change this paragraph</p>
+<p>don't change this paragraph</p>
+<p>Change this last paragraph</p>
+</div>
+
+<script>
+  const lastParagraph = document.querySelector("#main>p:nth-child(3)");
+lastParagraph.style.fontSize="24px";
+lastParagraph.style.color= "coral"
+</script>
