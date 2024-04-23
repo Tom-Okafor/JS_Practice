@@ -11,42 +11,126 @@
 
         <form method="post" action="">
             <fieldset>
-              <legend>CONTACT INFORMATION</legend>
-            <label for="firstname">Your Firstname</label>
-            <input
-                type="text"
-                name="fname"
-                id="firstname"
-                required
-                placeholder="first name"
-            />
+                <legend>CONTACT INFORMATION</legend>
+                <label for="firstname">Your Firstname</label>
+                <input
+                    type="text"
+                    name="fname"
+                    id="firstname"
+                    required
+                    placeholder="first name"
+                />
 
-            <label for="surname">Your surname</label>
-            <input
-                type="text"
-                name="surname"
-                id="surname"
-                placeholder="last name"
-            />
+                <label for="surname">Your surname</label>
+                <input
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="last name"
+                />
 
-            <label for="email">Your Email</label>
-            <input
-                type="email"
-                name="Email"
-                id="email"
-                placeholder="your email"
-                required
-            />
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    name="Email"
+                    id="email"
+                    placeholder="your email"
+                    required
+                />
 
-            <label for="telephone">Your Telephone</label>
-            <input
-                type="tel"
-                name="telephone"
-                id="telephone"
-                placeholder="your telephone number"
-            />
+                <label for="telephone">Your Telephone</label>
+                <input
+                    type="tel"
+                    name="telephone"
+                    id="telephone"
+                    placeholder="your telephone number"
+                />
             </fieldset>
-            
+
+            <fieldset>
+                <legend>Breakfast Preference</legend>
+                <input type="radio" name="breakfast" id="heavy" value="heavy" />
+                <label for="heavy">Heavy Breakfast</label>
+                <input
+                    type="radio"
+                    name="breakfast"
+                    id="medium"
+                    value="medium"
+                />
+                <label for="medium">Medium Weight Breakfast</label>
+                <input type="radio" name="breakfast" id="light" value="light" />
+                <label for="light">Light Weight Breakfast</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Do you have any allergies or illnesses?</legend>
+
+                <input type="checkbox" name="milk" id="milk" value="milk" />
+                <label for="milk">Milk</label>
+
+                <input type="checkbox" name="nuts" id="nuts" value="nuts" />
+                <label for="nuts">Nuts</label>
+
+                <input
+                    type="checkbox"
+                    name="animals"
+                    id="animals"
+                    value="animals"
+                />
+                <label for="animals">Animals</label>
+
+                <input
+                    type="checkbox"
+                    name="asthma"
+                    id="asthma"
+                    value="asthma"
+                />
+                <label for="asthma">Asthma</label>
+
+                <input
+                    type="checkbox"
+                    name="Pneumonia"
+                    id="Pneumonia"
+                    value="Pneumonia"
+                />
+                <label for="Pneumonia">Pneumonia</label>
+
+                <input
+                    type="checkbox"
+                    name="Arthritis"
+                    id="Arthritis"
+                    value="Arthritis"
+                />
+                <label for="Arthritis">Arthritis</label>
+
+                <input
+                    type="checkbox"
+                    name="diabetes"
+                    id="diabetes"
+                    value="diabetes"
+                />
+                <label for="diabetes">Diabetes</label>
+
+                <input
+                    type="checkbox"
+                    name="highbp"
+                    id="highbp"
+                    value="highbp"
+                />
+                <label for="highbp">High Blood Pressure</label>
+
+                <label for="desc" style="display: block">Others?</label>
+                <textarea
+                    style="display: block"
+                    name="description"
+                    id="desc"
+                    rows="5"
+                    cols="30"
+                    placeholder="any other sicknesses or allergies or maybe some specifics"
+                ></textarea>
+            </fieldset>
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
         </form>
     </body>
 </html>
