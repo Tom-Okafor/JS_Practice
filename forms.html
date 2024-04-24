@@ -5,6 +5,65 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Form Basics</title>
+        <style>
+            h1 {
+                font-family: "Courier New";
+                text-align: center;
+                text-shadow: 0.6px 0.6px 2px black;
+            }
+
+            label,
+            input,
+            textarea {
+                display: block;
+                font-family: "Times New Roman";
+            }
+
+            input,
+            textarea {
+                margin-bottom: 5px;
+                padding: 5px;
+                border: 1px solid tomato;
+                border-radius: 5px;
+            }
+
+            input {
+                border: 0;
+                border-left: 1px solid tomato;
+                border-bottom: 1px solid tomato;
+                border-radius: 6px;
+            }
+
+            label {
+                font-weight: 500;
+                text-transform: capitalize;
+                margin: 10px 5px 5px 0px;
+                font-size: 0.8rem;
+            }
+
+            [type="radio"],
+            [type="checkbox"],
+            input[type="radio"] + label,
+            input[type="checkbox"] + label {
+                display: inline;
+            }
+
+            fieldset {
+                border: 1.5px solid tomato;
+                margin: 20px 0;
+                border-radius: 10px;
+                box-shadow: 1.5px 1.5px 5px black;
+                padding: 10px;
+            }
+
+            legend {
+                background: white;
+                padding: 3px;
+                font-family: "Courier New";
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+        </style>
     </head>
     <body>
         <h1>HTML FORM BASICS</h1>
@@ -126,7 +185,7 @@
                     id="desc"
                     rows="5"
                     cols="30"
-                    placeholder="any other sicknesses or allergies or maybe some specifics"
+                    placeholder="any other sicknesses, allergies or maybe some specifics"
                 ></textarea>
             </fieldset>
             <input type="submit" value="submit" />
