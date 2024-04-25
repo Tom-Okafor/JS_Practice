@@ -17,7 +17,7 @@ function createNewArray(numbers, condition) {
                     equalToCounter++;
                 }
             }
-            if (condition < 1) {
+            if (!condition) {
                 if (numbers[i] < numbers[t]) {
                     comparisonCounter++;
                 }
