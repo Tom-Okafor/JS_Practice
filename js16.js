@@ -6,4 +6,10 @@ const RANDOM_NUMBERS = [6, 7, 26, 91, 22, 62, 372, 2];
 
 function findTheLargestNumber(numbers) {
     let greatestNumber = -9999999999999999999999;
+    for (let randomNumber of RANDOM_NUMBERS) {
+        if (greatestNumber < randomNumber) {
+            greatestNumber = randomNumber;
+        }
+    }
+    console.log(greatestNumber);
 }
