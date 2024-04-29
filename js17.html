@@ -66,5 +66,52 @@
                 </ul>
             </div>
         </section>
+
+        <section class="form">
+            <form method="get" action="">
+                <label for="name">name</label>
+                <input type="text" id="name" name="Name" required />
+
+                <label for="email">email</label>
+                <input type="email" id="email" name="Email" required />
+
+                <fieldset>
+                    <legend>interest?</legend>
+                    <input
+                        type="radio"
+                        id="buyer"
+                        name="interest"
+                        value="buyer"
+                    />
+                    <label for="buyer">Buyer</label>
+                    <input
+                        type="radio"
+                        id="visiting"
+                        name="interest"
+                        value="visiting"
+                    />
+                    <label for="visiting">Visitor</label>
+                    <input
+                        type="radio"
+                        id="other"
+                        name="interest"
+                        value="other"
+                    />
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Would you like us to send you information on new
+                        products
+                    </legend>
+                    <input type="radio" id="yes" name="Option" value="Yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="Option" value="No" />
+                    <label for="no">No</label>
+                </fieldset>
+                <input type="submit" value="send" id="submit" />
+            </form>
+        </section>
     </body>
 </html>
