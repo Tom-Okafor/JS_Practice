@@ -1,13 +1,11 @@
 //create a recursive function that returns the fibionacci sequece
+let FIBONACCI_ARRAY;
 
-let FIBONACCI_ARRAY = [];
-
-function createFibonacciSequence(layers, entryNumber) {
-    /* let entryNumber = 0;
-    let newNumber = 1;
-    console.log(newNumber);
-    function returnFibonacciSequence() {}
-    */
+function createFibonacciSequence(layers, entryNumber, entryPoint) {
+    if (entryPoint) {
+        FIBONACCI_ARRAY = [];
+        entryPoint--;
+    }
     if (FIBONACCI_ARRAY.length == 0) {
         FIBONACCI_ARRAY.push(entryNumber);
     } else if (FIBONACCI_ARRAY.length == 1) {
@@ -18,11 +16,17 @@ function createFibonacciSequence(layers, entryNumber) {
                 FIBONACCI_ARRAY[FIBONACCI_ARRAY.length - 2]
         );
     }
-    console.log(FIBONACCI_ARRAY[FIBONACCI_ARRAY.length - 1]);
-    layers--;
-    if (layers) {
-        createFibonacciSequence(layers, entryNumber);
+
+    return returnTheSequence();
+
+    function returnTheSequence() {
+        console.log(FIBONACCI_ARRAY[FIBONACCI_ARRAY.length - 1]);
+        layers--;
+        if (layers) {
+            createFibonacciSequence(layers, entryNumber);
+        }
     }
 }
 
-createFibonacciSequence(10, 1);
+createFibonacciSequence(10, 1, 1);
+createFibonacciSequence(30, 5, 1);
