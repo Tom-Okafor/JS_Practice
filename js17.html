@@ -16,6 +16,11 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         />
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
             body {
                 font-family: "Cormorant Garamond";
             }
@@ -23,13 +28,47 @@
             h1 {
                 text-transform: uppercase;
                 font-weight: bold;
-                text-shadow: 1px 1px 2px #777;
-                
+                text-shadow: 1px 1.5px 2px #777;
+            }
+
+            header {
+                height: 10vh;
+            }
+            header > ul {
+                height: 100%;
+                padding: 15px 10px;
+            }
+            header li {
+                list-style-type: none;
+                display: inline;
+            }
+            .brand > li > img {
+                height: 35px;
+            }
+            .brand span {
+                text-transform: uppercase;
+            }
+            .brand > li:nth-child(2) {
+                font-weight: 900;
             }
         </style>
     </head>
     <body>
-        <header></header>
+        <header>
+            <ul>
+                <li class="brand-holder">
+                    <ul class="brand">
+                        <li><img src="furniture-svgrepo-com.svg" /></li>
+                        <li><span>fun-</span>iture</li>
+                    </ul>
+                </li>
+                <li class="menu-holder">
+                    <div class="lineOne"></div>
+                    <div class="lineTwo"></div>
+                    <div class="lineThree"></div>
+                </li>
+            </ul>
+        </header>
         <h1>the best furniture for your home</h1>
 
         <section class="about">
