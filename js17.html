@@ -21,8 +21,18 @@
                 padding: 0;
                 box-sizing: border-box;
             }
+
+            ::root {
+                --color1: #beebe9;
+                --color2: #df7861;
+                --color3: #fffdf9;
+                --color4: #ffe3ed;
+                --color5: #ffffec;
+            }
+
             body {
                 font-family: "Cormorant Garamond";
+                background-color: #ffffec;
             }
 
             h1 {
@@ -42,14 +52,26 @@
                 list-style-type: none;
                 display: inline;
             }
+            .brand {
+                width: 38%;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-end;
+            }
             .brand > li > img {
                 height: 35px;
             }
             .brand span {
                 text-transform: uppercase;
+                font-size: 1.15rem;
+                font-family: "Josefin sans";
+                color: #df7861;
             }
             .brand > li:nth-child(2) {
                 font-weight: 900;
+                font-size: 1.1rem;
+                color: #37ccc5;
+                font-family: "Cormorant Garamond";
             }
         </style>
     </head>
@@ -59,7 +81,7 @@
                 <li class="brand-holder">
                     <ul class="brand">
                         <li><img src="furniture-svgrepo-com.svg" /></li>
-                        <li><span>fun-</span>iture</li>
+                        <li><span>fun</span>-iture</li>
                     </ul>
                 </li>
                 <li class="menu-holder">
