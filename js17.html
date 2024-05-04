@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree&family=Chakra+Petch&family=Comfortaa&family=Cormorant+Garamond&family=EB+Garamond:ital@0;1&family=Exo:ital@0;1&family=Josefin+Sans:ital@0;1&family=Montserrat+Alternates&family=Montserrat:ital@0;1&family=PT+Sans+Caption&family=Poiret+One&family=Quantico&family=Tenor+Sans&family=Ubuntu+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree&family=Chakra+Petch:wght@400;700&family=Comfortaa:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:wght@400;500;600&family=Montserrat:ital@0;1&family=PT+Sans+Caption&family=Poiret+One&family=Quantico&family=Tenor+Sans&family=Ubuntu+Mono&family=Noto+Serif&family=Nunito&family=Playfair+Display&family=Pridi&family=Roboto+Slab&family=Source+Code+Pro&family=Trirong&family=Junge&family=Karla&family=Lugrasimo&family=Lumanosimo&family=Acme&family=Borel&family=Bree+Serif&family=Cardo&&display=swap"
             rel="stylesheet"
         />
         <link
@@ -22,55 +22,189 @@
                 box-sizing: border-box;
             }
 
-            ::root {
+            :root {
                 --color1: #beebe9;
                 --color2: #df7861;
-                --color3: #fffdf9;
-                --color4: #ffe3ed;
+                --color3: #ffffad;
+                --color4: #fc85ae;
                 --color5: #ffffec;
+                --color6: #37ccc5;
+                --color7: #a35847;
             }
 
             body {
                 font-family: "Cormorant Garamond";
-                background: linear-gradient(-209deg, #ffffad, #ffffec 40%);
+                background: linear-gradient(
+                    -209deg,
+                    var(--color3),
+                    var(--color5) 40%
+                );
+                padding: 1em;
             }
             h1 {
                 text-transform: uppercase;
-                font-weight: bold;
-                text-shadow: 1px 1.5px 2px #777;
+                font-weight: 900;
+                font-family: "EB Garamond";
+                text-align: center;
+                font-size: 3rem;
+                margin: 2em 0 1.5em 0;
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-size: 600%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: revealBackground 2s ease-out forwards;
+                animation-delay: 0.8s;
+            }
+
+            @keyframes revealBackground {
+                60% {
+                    background-size: 800%;
+                    background-position: 7em -9em;
+                }
+
+                100% {
+                    background-size: 29%;
+                    background-position: 0;
+                }
+            }
+
+            .specialH1 {
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-size: 370%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: revealBackgroundToo 2s ease-out forwards;
+                animation-delay: 0.5s;
+            }
+
+            @keyframes revealBackgroundToo {
+                60% {
+                    background-size: 190%;
+                    background-position: 7em -9em;
+                }
+
+                100% {
+                    background-size: 10%;
+                    background-position: 0;
+                }
             }
 
             header {
                 height: 10vh;
+                border-bottom: 1.5px solid var(--color6);
             }
             header > ul {
                 height: 100%;
-                padding: 15px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
             header li {
                 list-style-type: none;
                 display: inline;
             }
             .brand {
-                width: 38%;
                 display: flex;
-                justify-content: space-around;
                 align-items: flex-end;
             }
             .brand > li > img {
                 height: 35px;
+                margin-right: 0.5em;
             }
             .brand span {
-                text-transform: uppercase;
+                text-transform: capitalize;
                 font-size: 1.15rem;
-                font-family: "Josefin sans";
-                color: #df7861;
+                font-family: "Montserrat Alternates";
+                color: var(--color2);
             }
             .brand > li:nth-child(2) {
-                font-weight: 900;
+                font-weight: bold;
                 font-size: 1.1rem;
-                color: #37ccc5;
+                color: var(--color6);
                 font-family: "Cormorant Garamond";
+            }
+
+            .menu-holder {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 5em;
+                justify-content: center;
+                align-items: flex-end;
+                cursor: pointer;
+            }
+            .menu-holder > div {
+                margin: 0.1em 0;
+                transition: all 2s ease-out;
+            }
+            .lineTwo {
+                height: 0.15em;
+                width: 2.5em;
+                background: var(--color4);
+            }
+            .lineOne {
+                height: 0.15em;
+                width: 1.4em;
+                background: var(--color6);
+            }
+            .lineThree {
+                height: 0.15em;
+                width: 1.1em;
+                background: var(--color6);
+            }
+
+            .menu-holderToo {
+                display: grid;
+                height: 100%;
+                width: 5em;
+                grid-template-columns: 0.2em 0.2em 0.2em;
+                gap: 0.15em;
+                justify-content: flex-end;
+                align-content: center;
+            }
+
+            .lineTwoToo {
+                width: 0.15em;
+                height: 2.5em;
+                background: var(--color4);
+            }
+            .lineOneToo {
+                width: 0.15em;
+                height: 1.4em;
+                background: var(--color6);
+            }
+            .lineThreeToo {
+                width: 0.15em;
+                height: 1.1em;
+                background: var(--color6);
             }
         </style>
     </head>
@@ -83,14 +217,14 @@
                         <li><span>fun</span>-iture</li>
                     </ul>
                 </li>
-                <li class="menu-holder">
+                <li class="menu-holder" tabindex="1">
                     <div class="lineOne"></div>
                     <div class="lineTwo"></div>
                     <div class="lineThree"></div>
                 </li>
             </ul>
         </header>
-        <h1>the best furniture for your home</h1>
+        <h1>the <span class="specialH1">best furniture</span> for your home</h1>
 
         <section class="about">
             <h3>who are we?</h3>
