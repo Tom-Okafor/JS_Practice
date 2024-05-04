@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree&family=Chakra+Petch:wght@400;700&family=Comfortaa:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:wght@400;500;600&family=Montserrat:ital@0;1&family=PT+Sans+Caption&family=Poiret+One&family=Quantico&family=Tenor+Sans&family=Ubuntu+Mono&family=Noto+Serif&family=Nunito&family=Playfair+Display&family=Pridi&family=Roboto+Slab&family=Source+Code+Pro&family=Trirong&family=Junge&family=Karla&family=Lugrasimo&family=Lumanosimo&family=Acme&family=Borel&family=Bree+Serif&family=Cardo&&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree&family=Chakra+Petch:wght@400;700&family=Comfortaa:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Courier+Prime&family=Montserrat+Alternates:wght@400;500;600&family=Montserrat:ital@0;1&family=PT+Sans+Caption&family=Poiret+One&family=Quantico&family=Tenor+Sans&family=Ubuntu+Mono&family=Noto+Serif&family=Nunito&family=Playfair+Display&family=Pridi&family=Roboto+Slab&family=Source+Code+Pro&family=Trirong&family=Junge&family=Karla&family=Lugrasimo&family=Lumanosimo&family=Acme&family=Borel&family=Bree+Serif&family=Cardo&&display=swap"
             rel="stylesheet"
         />
         <link
@@ -66,7 +66,7 @@
                 background-repeat: repeat;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                animation: revealBackground 2s ease-out forwards;
+                animation: revealBackground 1s ease-out forwards;
                 animation-delay: 0.8s;
             }
 
@@ -206,6 +206,47 @@
                 height: 1.1em;
                 background: var(--color6);
             }
+            section {
+                margin: 5em 0 7em 0;
+            }
+            .h3 {
+                font-size: 1.6em;
+                font-family: "Cormorant Garamond";
+                font-weight: bolder;
+                text-transform: capitalize;
+                margin-bottom: 0.5em;
+                margin-top: 5em;
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-size: 370%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: revealBackgroundToo 1s ease-out forwards;
+            }
+
+            section p {
+                font-family: "Montserrat Alternates", Sans-Serif;
+                font-size: 0.9em;
+                line-height: 1.4em;
+                max-width: 40ch;
+                word-spacing: 0.15em;
+            }
+            .pHide {
+                opacity: 0;
+            }
         </style>
     </head>
     <body>
@@ -227,8 +268,8 @@
         <h1>the <span class="specialH1">best furniture</span> for your home</h1>
 
         <section class="about">
-            <h3>who are we?</h3>
-            <p>
+            <h3 class="">who are we?</h3>
+            <p class="pHide">
                 Aliqua sit consectetur nisi proident magna fugiat dolore in.
                 Eiusmod anim in ullamco veniam qui excepteur Lorem adipisicing
                 duis. Veniam magna mollit fugiat ut est adipisicing qui
@@ -236,7 +277,7 @@
                 ex aliqua nulla esse velit exercitation.
             </p>
 
-            <p>
+            <p class="pHide">
                 nisi fugiat exercitation nisi qui esse ut non eiusmod velit
                 excepteur minim amet commodo elit do aliqua velit adipisicing id
                 duis occaecat ea sint non reprehenderit fugiat in anim irure
@@ -244,21 +285,23 @@
         </section>
 
         <section class="features">
-            <h3>features</h3>
+            <h3 class="">features</h3>
             <article>
                 <img />
-                <p>Lorem mollit non est occaecat duis nostrud et do dolore</p>
+                <p class="pHide">
+                    Lorem mollit non est occaecat duis nostrud et do dolore
+                </p>
             </article>
             <article>
                 <img />
-                <p>
+                <p class="pHide">
                     Aliquip non elit tempor velit dolore veniam eiusmod tempor
                     proident sit.
                 </p>
             </article>
             <article>
                 <img />
-                <p>
+                <p class="pHide">
                     Nostrud exercitation cupidatat adipisicing excepteur
                     deserunt irure est. Lorem non laborum sunt velit duis minim
                     incididunt.
@@ -266,7 +309,7 @@
             </article>
             <article>
                 <img />
-                <p>Et ut anim amet veniam ut pariatur sunt.</p>
+                <p class="pHide">Et ut anim amet veniam ut pariatur sunt.</p>
             </article>
         </section>
 
