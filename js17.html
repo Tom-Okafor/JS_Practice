@@ -257,18 +257,19 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-top: 7em;
             }
             .intro img {
-                margin-top: 1em;
-                width: 85vw;
-                border-radius: 25px;
+                width: 86vw;
+                height: 95%;
+
+                position: absolute;
             }
 
             .box {
-                height: 250px;
-                width: 180px;
-                background-color: var(--color2);
-                border-radius: 10px;
+                width: 90vw;
+                height: 50vh;
+                background-color: var(--color4);
                 position: relative;
                 overflow: hidden;
                 display: flex;
@@ -278,8 +279,8 @@
             .box::before {
                 content: "";
                 position: absolute;
-                height: 130%;
-                width: 100px;
+                height: 140%;
+                width: 120px;
                 background: var(--color5);
                 animation: move 4s linear infinite;
             }
@@ -291,14 +292,6 @@
                 100% {
                     transform: rotate(360deg);
                 }
-            }
-
-            .box::after {
-                content: "";
-                position: absolute;
-                inset: 8px;
-                background: var(--color7);
-                border-radius: 6px;
             }
         </style>
     </head>
@@ -319,8 +312,9 @@
             </ul>
         </header>
         <section class="intro">
-            <div class="box"></div>
-            <img src="livingroom.jpeg" alt="pink living room" />
+            <div class="box">
+                <img src="livingroom.jpeg" alt="pink living room" />
+            </div>
             <h1>
                 the <span class="specialH1">best furniture</span> for your home
             </h1>
