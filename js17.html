@@ -243,7 +243,7 @@
                 line-height: 1.6em;
                 max-width: 40ch;
                 word-spacing: 0.15em;
-                margin-bottom: 1em;
+                margin-bottom: 1.5em;
             }
             .about p {
                 text-indent: 2em;
@@ -252,6 +252,19 @@
                 /*                 opacity: 0;
  */
             }
+
+            .intro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .intro img {
+                margin-top: 1em;
+                width: 85vw;
+                border-radius: 25px;
+            }
+            
+            intro img:before{}
         </style>
     </head>
     <body>
@@ -270,7 +283,12 @@
                 </li>
             </ul>
         </header>
-        <h1>the <span class="specialH1">best furniture</span> for your home</h1>
+        <section class="intro">
+            <img src="livingroom.jpeg" alt="pink living room" />
+            <h1>
+                the <span class="specialH1">best furniture</span> for your home
+            </h1>
+        </section>
 
         <section class="about">
             <h3 class="">who are we?</h3>
