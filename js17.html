@@ -263,8 +263,43 @@
                 width: 85vw;
                 border-radius: 25px;
             }
-            
-            intro img:before{}
+
+            .box {
+                height: 250px;
+                width: 180px;
+                background-color: var(--color2);
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box::before {
+                content: "";
+                position: absolute;
+                height: 130%;
+                width: 100px;
+                background: var(--color5);
+                animation: move 4s linear infinite;
+            }
+
+            @keyframes move {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .box::after {
+                content: "";
+                position: absolute;
+                inset: 8px;
+                background: var(--color7);
+                border-radius: 6px;
+            }
         </style>
     </head>
     <body>
@@ -284,6 +319,7 @@
             </ul>
         </header>
         <section class="intro">
+            <div class="box"></div>
             <img src="livingroom.jpeg" alt="pink living room" />
             <h1>
                 the <span class="specialH1">best furniture</span> for your home
