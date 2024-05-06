@@ -281,6 +281,7 @@ position: absolute;
 height: 140%;
 width: 120px;
 background: var(--color6);
+background: linear-gradient(var(--color6) 50%, mintcream 50%);
 animation: move 4s linear infinite forwards;
 }
 
@@ -294,26 +295,6 @@ transform: rotate(45deg);
 transform: rotate(405deg);
 }
 }
-.box::after {
-content: "";
-position: absolute;
-height: 140%;
-width: 120px;
-background: var(--color4);
-animation: movetoo 4s linear infinite forwards;
-}
-
-@keyframes movetoo {
-0% {
-transform: rotate(-45deg);
-}
-
-
-100% {
-transform: rotate(-405deg);
-}
-}
-
 .boxHolder {
 display: flex;
 align-items: center;
