@@ -1,451 +1,526 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>CHANGE DISPLAY THEME</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree&family=Chakra+Petch:wght@400;700&family=Comfortaa:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Courier+Prime&family=Montserrat+Alternates:wght@400;500;600&family=Montserrat:ital@0;1&family=PT+Sans+Caption&family=Poiret+One&family=Quantico&family=Tenor+Sans&family=Ubuntu+Mono&family=Noto+Serif&family=Nunito&family=Playfair+Display&family=Pridi&family=Roboto+Slab&family=Source+Code+Pro&family=Trirong&family=Junge&family=Karla&family=Lugrasimo&family=Lumanosimo&family=Acme&family=Borel&family=Bree+Serif&family=Cardo&&display=swap"
-rel="stylesheet"
-/>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-/>
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-list-style-type: none;
-}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CHANGE DISPLAY THEME</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arvo&family=Bai+Jamjuree&family=Chakra+Petch:wght@400;700&family=Comfortaa:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Courier+Prime&family=Montserrat+Alternates:wght@400;500;600&family=Montserrat:ital@0;1&family=PT+Sans+Caption&family=Poiret+One&family=Quantico&family=Tenor+Sans&family=Ubuntu+Mono&family=Noto+Serif&family=Nunito&family=Playfair+Display&family=Pridi&family=Roboto+Slab&family=Source+Code+Pro&family=Trirong&family=Junge&family=Karla&family=Lugrasimo&family=Lumanosimo&family=Acme&family=Borel&family=Bree+Serif&family=Cardo&&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                list-style-type: none;
+            }
 
-:root {
---color1: #beebe9;
---color2: #df7861;
---color3: #ffffad;
---color4: #fc85ae;
---color5: #ffffec;
---color6: #37ccc5;
---color7: #a35847;
-}
+            :root {
+                --color1: #beebe9;
+                --color2: #df7861;
+                --color3: #ffffad;
+                --color4: #fc85ae;
+                --color5: #ffffec;
+                --color6: #37ccc5;
+                --color7: #a35847;
+            }
 
-body {
-font-family: "Cormorant Garamond";
-background: linear-gradient(
--209deg,
-var(--color3),
-var(--color5) 40%
-);
-padding: 1em;
-}
-h1 {
-text-transform: uppercase;
-font-weight: 900;
-font-family: "EB Garamond";
-text-align: center;
-font-size: 3rem;
-margin-top: 3em;
-background: conic-gradient(
-#3788cc 53deg,
-var(--color2) 53deg,
-var(--color2) 92deg,
-#d2d234 92deg,
-#d2d234 154deg,
-var(--color4) 154deg,
-var(--color4) 208deg,
-#90909b 208deg,
-#90909b 247deg,
-var(--color6) 247deg,
-var(--color6) 318deg,
-var(--color7) 318deg
-);
-background-size: 600%;
-background-repeat: repeat;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: revealBackground 1s ease-out forwards;
-animation-delay: 0.8s;
-}
+            body {
+                font-family: "Cormorant Garamond";
+                background: linear-gradient(
+                    -209deg,
+                    var(--color3),
+                    var(--color5) 40%
+                );
+                padding: 1em;
+            }
+            h1 {
+                text-transform: uppercase;
+                font-weight: 900;
+                font-family: "EB Garamond";
+                text-align: center;
+                font-size: 3rem;
+                margin-top: 3em;
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-size: 600%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: revealBackground 1s ease-out forwards;
+                animation-delay: 0.8s;
+            }
 
-@keyframes revealBackground {
-60% {
-background-size: 800%;
-background-position: 7em -9em;
-}
+            @keyframes revealBackground {
+                60% {
+                    background-size: 800%;
+                    background-position: 7em -9em;
+                }
 
-100% {
-background-size: 29%;
-background-position: 0;
-}
-}
+                100% {
+                    background-size: 29%;
+                    background-position: 0;
+                }
+            }
 
-.specialH1 {
-background: conic-gradient(
-#3788cc 53deg,
-var(--color2) 53deg,
-var(--color2) 92deg,
-#d2d234 92deg,
-#d2d234 154deg,
-var(--color4) 154deg,
-var(--color4) 208deg,
-#90909b 208deg,
-#90909b 247deg,
-var(--color6) 247deg,
-var(--color6) 318deg,
-var(--color7) 318deg
-);
-background-size: 370%;
-background-repeat: repeat;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: revealBackgroundToo 2s ease-out forwards;
-animation-delay: 0.5s;
-}
+            .specialH1 {
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-size: 370%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: revealBackgroundToo 2s ease-out forwards;
+                animation-delay: 0.5s;
+            }
 
-@keyframes revealBackgroundToo {
-60% {
-background-size: 190%;
-background-position: 7em -9em;
-}
+            @keyframes revealBackgroundToo {
+                60% {
+                    background-size: 190%;
+                    background-position: 7em -9em;
+                }
 
-100% {
-background-size: 10%;
-background-position: 0;
-}
-}
+                100% {
+                    background-size: 10%;
+                    background-position: 0;
+                }
+            }
 
-header {
-height: 10vh;
-border-bottom: 1.5px solid var(--color6);
-}
-header > ul {
-height: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-header li {
-display: inline;
-}
-.brand {
-display: flex;
-align-items: flex-end;
-}
-.brand > li > img {
-height: 35px;
-margin-right: 0.5em;
-}
-.brand span {
-text-transform: capitalize;
-font-size: 1.15rem;
-font-family: "Montserrat Alternates";
-color: var(--color2);
-}
-.brand > li:nth-child(2) {
-font-weight: bold;
-font-size: 1.1rem;
-color: var(--color6);
-font-family: "Cormorant Garamond";
-}
+            header {
+                height: 10vh;
+                border-bottom: 1.5px solid var(--color6);
+            }
+            header > ul {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            header li {
+                display: inline;
+            }
+            .brand {
+                display: flex;
+                align-items: flex-end;
+            }
+            .brand > li > img {
+                height: 35px;
+                margin-right: 0.5em;
+            }
+            .brand span {
+                text-transform: capitalize;
+                font-size: 1.15rem;
+                font-family: "Montserrat Alternates";
+                color: var(--color2);
+            }
+            .brand > li:nth-child(2) {
+                font-weight: bold;
+                font-size: 1.1rem;
+                color: var(--color6);
+                font-family: "Cormorant Garamond";
+            }
 
-.menu-holder {
-display: flex;
-flex-direction: column;
-height: 100%;
-width: 5em;
-justify-content: center;
-align-items: flex-end;
-cursor: pointer;
-}
-.menu-holder > div {
-margin: 0.1em 0;
-transition: all 2s ease-out;
-}
-.lineTwo {
-height: 0.15em;
-width: 2.5em;
-background: var(--color4);
-}
-.lineOne {
-height: 0.15em;
-width: 1.4em;
-background: var(--color6);
-}
-.lineThree {
-height: 0.15em;
-width: 1.1em;
-background: var(--color6);
-}
+            .menu-holder {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 5em;
+                justify-content: center;
+                align-items: flex-end;
+                cursor: pointer;
+            }
+            .menu-holder > div {
+                margin: 0.1em 0;
+                transition: all 2s ease-out;
+            }
+            .lineTwo {
+                height: 0.15em;
+                width: 2.5em;
+                background: var(--color4);
+            }
+            .lineOne {
+                height: 0.15em;
+                width: 1.4em;
+                background: var(--color6);
+            }
+            .lineThree {
+                height: 0.15em;
+                width: 1.1em;
+                background: var(--color6);
+            }
 
-.menu-holderToo {
-display: grid;
-height: 100%;
-width: 5em;
-grid-template-columns: 0.2em 0.2em 0.2em;
-gap: 0.15em;
-justify-content: flex-end;
-align-content: center;
-}
+            .menu-holderToo {
+                display: grid;
+                height: 100%;
+                width: 5em;
+                grid-template-columns: 0.2em 0.2em 0.2em;
+                gap: 0.15em;
+                justify-content: flex-end;
+                align-content: center;
+            }
 
-.lineTwoToo {
-width: 0.15em;
-height: 2.5em;
-background: var(--color4);
-}
-.lineOneToo {
-width: 0.15em;
-height: 1.4em;
-background: var(--color6);
-}
-.lineThreeToo {
-width: 0.15em;
-height: 1.1em;
-background: var(--color6);
-}
-section {
-margin: 5em 0 7em 0;
-}
-h3 {
-font-size: 1.6em;
-font-family: "Cormorant Garamond";
-font-weight: bolder;
-text-transform: capitalize;
-margin-bottom: 0.5em;
-background: conic-gradient(
-#3788cc 53deg,
-var(--color2) 53deg,
-var(--color2) 92deg,
-#d2d234 92deg,
-#d2d234 154deg,
-var(--color4) 154deg,
-var(--color4) 208deg,
-#90909b 208deg,
-#90909b 247deg,
-var(--color6) 247deg,
-var(--color6) 318deg,
-var(--color7) 318deg
-);
-background-size: 370%;
-background-repeat: repeat;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: revealBackgroundToo 1s ease-out forwards;
-}
+            .lineTwoToo {
+                width: 0.15em;
+                height: 2.5em;
+                background: var(--color4);
+            }
+            .lineOneToo {
+                width: 0.15em;
+                height: 1.4em;
+                background: var(--color6);
+            }
+            .lineThreeToo {
+                width: 0.15em;
+                height: 1.1em;
+                background: var(--color6);
+            }
+            section {
+                margin: 5em 0 7em 0;
+            }
+            h3 {
+                font-size: 1.6em;
+                font-family: "Cormorant Garamond";
+                font-weight: bolder;
+                text-transform: capitalize;
+                margin-bottom: 0.5em;
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-size: 370%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: revealBackgroundToo 1s ease-out forwards;
+            }
 
-section p {
-font-family: "Montserrat Alternates", Sans-Serif;
-font-size: 0.9em;
-line-height: 1.6em;
-max-width: 40ch;
-word-spacing: 0.15em;
-margin-bottom: 1.5em;
-}
-.about p {
-text-indent: 2em;
-}
-.pHide {
-/*                 opacity: 0;
+            section p {
+                font-family: "Montserrat Alternates", Sans-Serif;
+                font-size: 0.9em;
+                line-height: 1.6em;
+                max-width: 40ch;
+                word-spacing: 0.15em;
+                margin-bottom: 1.5em;
+            }
+            .about p {
+                text-indent: 2em;
+            }
+            .pHide {
+                /*                 opacity: 0;
             */
-}
+            }
 
-.intro {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 8em;
-}
-.intro img {
-width: 86vw;
-height: 95%;
-z-index: 1;
-position: absolute;
-}
+            .intro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 8em;
+            }
+            .intro img {
+                width: 86vw;
+                height: 95%;
+                z-index: 1;
+                position: absolute;
+            }
 
-.box {
-width: 90vw;
-height: 50vh;
-background-color: var(--color4);
-position: relative;
-overflow: hidden;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.box::before {
-content: "";
-position: absolute;
-height: 140%;
-width: 120px;
-background: var(--color6);
-background: linear-gradient(var(--color6) 50%, mintcream 50%);
-animation: move 4s linear infinite forwards;
-}
+            .box {
+                width: 90vw;
+                height: 50vh;
+                background-color: var(--color4);
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box::before {
+                content: "";
+                position: absolute;
+                height: 140%;
+                width: 120px;
+                background: var(--color6);
+                background: linear-gradient(var(--color6) 50%, mintcream 50%);
+                animation: move 4s linear infinite forwards;
+            }
 
-@keyframes move {
-0% {
-transform: rotate(45deg);
-}
+            @keyframes move {
+                0% {
+                    transform: rotate(45deg);
+                }
 
+                100% {
+                    transform: rotate(405deg);
+                }
+            }
+            .boxHolder {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
 
-100% {
-transform: rotate(405deg);
-}
-}
-.boxHolder {
-display: flex;
-align-items: center;
-flex-direction: column;
-}
+            .box-note {
+                text-transform: capitalize;
+                font-style: italic;
+                margin-top: 0.5em;
+                color: var(--color7);
+            }
 
-.box-note {
-text-transform: capitalize;
-font-style: italic;
-margin-top: 0.5em;
-color: var(--color7);
-}
-</style>
-</head>
-<body>
-<header>
-<ul>
-<li class="brand-holder">
-<ul class="brand">
-<li><img src="furniture-svgrepo-com.svg" /></li>
-<li><span>fun</span>-iture</li>
-</ul>
-</li>
-<li class="menu-holder" tabindex="1">
-<div class="lineOne"></div>
-<div class="lineTwo"></div>
-<div class="lineThree"></div>
-</li>
-</ul>
-</header>
-<section class="intro">
-<div class="boxHolder">
-<div class="box">
-<img src="livingroom.jpeg" alt="pink living room" />
-</div>
-<p class="box-note">
-make home, home again!
-</p>
-</div>
+            article img {
+                width: 75vw;
+            }
 
-<h1>
-the <span class="specialH1">best furniture</span> for your home
-</h1>
-</section>
+            .article-div {
+                width: 75vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2em;
+                position: relative;
+                left: 3%;
+            }
 
-<section class="about">
-<h3 class="">who are we?</h3>
-<p class="pHide">
-Aliqua sit consectetur nisi proident magna fugiat dolore in.
-Eiusmod anim in ullamco veniam qui excepteur Lorem adipisicing
-duis. Veniam magna mollit fugiat ut est adipisicing qui
-consequat. Non sit amet veniam nostrud velit commodo ex laboris
-ex aliqua nulla esse velit exercitation.
-</p>
+            .article-div::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                height: 105%;
+                width: 78vw;
+                background: conic-gradient(
+                    #3788cc 53deg,
+                    var(--color2) 53deg,
+                    var(--color2) 92deg,
+                    #d2d234 92deg,
+                    #d2d234 154deg,
+                    var(--color4) 154deg,
+                    var(--color4) 208deg,
+                    #90909b 208deg,
+                    #90909b 247deg,
+                    var(--color6) 247deg,
+                    var(--color6) 318deg,
+                    var(--color7) 318deg
+                );
+                background-repeat: repeat;
+                animation: shift 3s ease-in-out infinite alternate forwards;
+                box-shadow: 1px 1px 2px #777;
+            }
 
-<p class="pHide">
-Nisi fugiat exercitation nisi qui esse ut non eiusmod velit
-excepteur minim amet commodo elit do aliqua velit adipisicing id
-duis occaecat ea sint non reprehenderit fugiat in anim irure
-</p>
-</section>
+            @keyframes shift {
+                0% {
+                    background-size: 700%;
+                    background-position: 13rem;
+                }
+                35% {
+                    background-size: 500%;
+                    background-position: 9rem;
+                }
+              
+            }
 
-<section class="features">
-<h3 class="">features</h3>
-<article>
-<img />
-<p class="pHide">
-Lorem mollit non est occaecat duis nostrud et do dolore
-</p>
-</article>
-<article>
-<img />
-<p class="pHide">
-Aliquip non elit tempor velit dolore veniam eiusmod tempor
-proident sit.
-</p>
-</article>
-<article>
-<img />
-<p class="pHide">
-Nostrud exercitation cupidatat adipisicing excepteur
-deserunt irure est. Lorem non laborum sunt velit duis minim
-incididunt.
-</p>
-</article>
-<article>
-<img />
-<p class="pHide">
-Et ut anim amet veniam ut pariatur sunt.
-</p>
-</article>
-</section>
+            article p {
+                max-width: 30ch;
+            }
 
-<section class="carousel">
-<div>
-<ul>
-<li><img /></li>
-<li><img /></li>
-<li><img /></li>
-<li><img /></li>
-<li><img /></li>
-<li><img /></li>
-</ul>
-</div>
-</section>
+            article {
+                margin: 3em 0 7em 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li class="brand-holder">
+                    <ul class="brand">
+                        <li><img src="furniture-svgrepo-com.svg" /></li>
+                        <li><span>fun</span>-iture</li>
+                    </ul>
+                </li>
+                <li class="menu-holder" tabindex="1">
+                    <div class="lineOne"></div>
+                    <div class="lineTwo"></div>
+                    <div class="lineThree"></div>
+                </li>
+            </ul>
+        </header>
+        <section class="intro">
+            <div class="boxHolder">
+                <div class="box">
+                    <img src="livingroom.jpeg" alt="pink living room" />
+                </div>
+                <p class="box-note">make home, home again!</p>
+            </div>
 
-<section class="form">
-<form method="get" action="">
-<label for="name">name</label>
-<input type="text" id="name" name="Name" required />
+            <h1>
+                the <span class="specialH1">best furniture</span> for your home
+            </h1>
+        </section>
 
-<label for="email">email</label>
-<input type="email" id="email" name="Email" required />
+        <section class="about">
+            <h3 class="">who are we?</h3>
+            <p class="pHide">
+                Aliqua sit consectetur nisi proident magna fugiat dolore in.
+                Eiusmod anim in ullamco veniam qui excepteur Lorem adipisicing
+                duis. Veniam magna mollit fugiat ut est adipisicing qui
+                consequat. Non sit amet veniam nostrud velit commodo ex laboris
+                ex aliqua nulla esse velit exercitation.
+            </p>
 
-<fieldset>
-<legend>interest?</legend>
-<input
-type="radio"
-id="buyer"
-name="interest"
-value="buyer"
-/>
-<label for="buyer">Buyer</label>
-<input
-type="radio"
-id="visiting"
-name="interest"
-value="visiting"
-/>
-<label for="visiting">Visitor</label>
-<input
-type="radio"
-id="other"
-name="interest"
-value="other"
-/>
-<label for="other">Other</label>
-</fieldset>
+            <p class="pHide">
+                Nisi fugiat exercitation nisi qui esse ut non eiusmod velit
+                excepteur minim amet commodo elit do aliqua velit adipisicing id
+                duis occaecat ea sint non reprehenderit fugiat in anim irure
+            </p>
 
-<fieldset>
-<legend>
-Would you like us to send you information on new
-products
-</legend>
-<input type="radio" id="yes" name="Option" value="Yes" />
-<label for="yes">Yes</label>
-<input type="radio" id="no" name="Option" value="No" />
-<label for="no">No</label>
-</fieldset>
-<input type="submit" value="send" id="submit" />
-</form>
-</section>
-</body>
+            <p class="pHide">
+                Consectetur ut nulla sunt excepteur elit officia Lorem
+                cupidatat. Lorem consectetur anim occaecat amet aute.
+                Exercitation cupidatat laborum fugiat velit cupidatat aliqua
+                aute. Est non ut aute elit incididunt velit pariatur cupidatat
+                eu cillum dolor quis.
+            </p>
+        </section>
+
+        <section class="features">
+            <h3 class="">features</h3>
+            <article>
+                <div class="article-div">
+                    <img src="livingroom.jpeg" alt="..." />
+                </div>
+                <p class="pHide">
+                    Lorem mollit non est occaecat duis nostrud et do dolore.
+                    Velit fugiat nulla id eu nostrud sit aute.
+                </p>
+            </article>
+            <article>
+                <div class="article-div">
+                    <img src="livingroom.jpeg" alt="..." />
+                </div>
+                <p class="pHide">
+                    Aliquip non elit tempor velit dolore veniam eiusmod tempor
+                    proident sit.
+                </p>
+            </article>
+            <article>
+                <div class="article-div">
+                    <img src="livingroom.jpeg" alt="..." />
+                </div>
+                <p class="pHide">
+                    Nostrud exercitation cupidatat adipisicing excepteur
+                    deserunt irure est. Lorem non laborum sunt velit duis minim
+                    incididunt.
+                </p>
+            </article>
+            <article>
+                <div class="article-div">
+                    <img src="livingroom.jpeg" alt="..." />
+                </div>
+                <p class="pHide">
+                    Et ut anim amet veniam ut pariatur sunt. Est nostrud
+                    consectetur adipisicing dolore mollit sit excepteur magna
+                    exercitation
+                </p>
+            </article>
+        </section>
+
+        <section class="carousel">
+            <div>
+                <ul>
+                    <li><img /></li>
+                    <li><img /></li>
+                    <li><img /></li>
+                    <li><img /></li>
+                    <li><img /></li>
+                    <li><img /></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form">
+            <form method="get" action="">
+                <label for="name">name</label>
+                <input type="text" id="name" name="Name" required />
+
+                <label for="email">email</label>
+                <input type="email" id="email" name="Email" required />
+
+                <fieldset>
+                    <legend>interest?</legend>
+                    <input
+                        type="radio"
+                        id="buyer"
+                        name="interest"
+                        value="buyer"
+                    />
+                    <label for="buyer">Buyer</label>
+                    <input
+                        type="radio"
+                        id="visiting"
+                        name="interest"
+                        value="visiting"
+                    />
+                    <label for="visiting">Visitor</label>
+                    <input
+                        type="radio"
+                        id="other"
+                        name="interest"
+                        value="other"
+                    />
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Would you like us to send you information on new
+                        products
+                    </legend>
+                    <input type="radio" id="yes" name="Option" value="Yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="Option" value="No" />
+                    <label for="no">No</label>
+                </fieldset>
+                <input type="submit" value="send" id="submit" />
+            </form>
+        </section>
+    </body>
 </html>
