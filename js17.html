@@ -261,7 +261,7 @@ margin-top: 8em;
 .intro img {
 width: 86vw;
 height: 95%;
-
+z-index: 1;
 position: absolute;
 }
 
@@ -281,22 +281,36 @@ position: absolute;
 height: 140%;
 width: 120px;
 background: var(--color6);
-animation: move 4s linear infinite;
+animation: move 4s linear infinite forwards;
 }
 
 @keyframes move {
 0% {
-transform: rotate(0deg);
-background-color: var(--color5);
+transform: rotate(45deg);
 }
 
-50% {
-background-color: var(--color6);
-}
 
 100% {
-transform: rotate(360deg);
-background-color: var(--color5);
+transform: rotate(405deg);
+}
+}
+.box::after {
+content: "";
+position: absolute;
+height: 140%;
+width: 120px;
+background: var(--color4);
+animation: movetoo 4s linear infinite forwards;
+}
+
+@keyframes movetoo {
+0% {
+transform: rotate(-45deg);
+}
+
+
+100% {
+transform: rotate(-405deg);
 }
 }
 
