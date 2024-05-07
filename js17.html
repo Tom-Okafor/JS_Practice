@@ -161,9 +161,20 @@
                 align-items: flex-end;
                 cursor: pointer;
             }
+
+            @keyframes anim {
+                to {
+                    display: grid;
+                    height: 100%;
+                    width: 5em;
+                    grid-template-columns: 0.2em 0.2em 0.2em;
+                    gap: 0.15em;
+                    justify-content: flex-end;
+                    align-content: center;
+                }
+            }
             .menu-holder > div {
                 margin: 0.1em 0;
-                transition: all 2s ease-out;
             }
             .lineTwo {
                 height: 0.15em;
@@ -179,6 +190,27 @@
                 height: 0.15em;
                 width: 1.1em;
                 background: var(--color6);
+            }
+            @keyframes anima {
+                to {
+                    width: 0.15em;
+                    height: 1.4em;
+                    background: var(--color6);
+                }
+            }
+            @keyframes animb {
+                to {
+                    width: 0.15em;
+                    height: 2.5em;
+                    background: var(--color4);
+                }
+            }
+            @keyframes animc {
+                to {
+                    width: 0.15em;
+                    height: 1.1em;
+                    background: var(--color6);
+                }
             }
 
             .menu-holderToo {
@@ -274,6 +306,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                box-shadow: 2px 2px 7px gray;
             }
             .box::before {
                 content: "";
@@ -305,6 +338,7 @@
                 font-style: italic;
                 margin-top: 0.5em;
                 color: var(--color7);
+                font-size: 0.7em;
             }
 
             article img {
@@ -318,7 +352,7 @@
                 align-items: center;
                 margin-bottom: 2em;
                 position: relative;
-                left: 3%;
+                left: 2vw;
             }
 
             .article-div::before {
@@ -341,23 +375,24 @@
                     var(--color6) 318deg,
                     var(--color7) 318deg
                 );
+                background-size: 700%;
+                background-position: 13em;
                 background-repeat: repeat;
-                animation: shift 3s ease-in-out infinite alternate forwards;
-                box-shadow: 1px 1px 2px #777;
+                box-shadow: 1.5px 1.5px 5px #777;
             }
 
-            @keyframes shift {
-                0% {
-                    background-size: 700%;
-                    background-position: 13rem;
-                }
-                35% {
-                    background-size: 500%;
-                    background-position: 9rem;
-                }
-              
+            article:nth-of-type(2) > div::before {
+                background-size: 700%;
+                background-position: 3em -6.9em;
             }
-
+            article:nth-of-type(3) > div::before {
+                background-size: 2000%;
+                background-position: 43em;
+            }
+            article:nth-of-type(4) > div::before {
+                background-size: 900%;
+                background-position: 201em -186px;
+            }
             article p {
                 max-width: 30ch;
             }
