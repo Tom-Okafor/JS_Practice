@@ -424,12 +424,14 @@
                 align-content: center;
                 background: radial-gradient(
                     500px at top right,
-                    #ffffadc9 40%,
+                    #ffffadd9 40%,
                     var(--color5) 40%
                 );
                 border: 1px solid #ffffada1;
                 backdrop-filter: blur(50px);
                 box-shadow: 0.5px 0.5px 12px #90909b;
+                position: relative;
+                overflow: hidden;
             }
 
             label,
@@ -451,11 +453,10 @@
                 padding: 0.5em 0.1em 1em 0.1em;
                 font-size: 0.8em;
                 text-transform: capitalize;
+                line-height: 2em;
+                word-spacing: 0.8px;
             }
-            input {
-                padding: 0.8em;
-                margin-bottom: 2em;
-            }
+
             fieldset > input:nth-of-type(1),
             fieldset > input:nth-of-type(2),
             fieldset > input:nth-of-type(3) {
@@ -463,16 +464,18 @@
             }
 
             fieldset > label {
-                margin-right: 0.7em;
+                margin-right: 0.8em;
             }
             fieldset {
                 margin-bottom: 1.5em;
             }
 
             form > input {
+                padding: 0.8em;
+                margin-bottom: 2em;
                 border: 2px solid var(--color5);
-                background-color: #ffffff42;
-                backdrop-filter: blur(10px);
+                background-color: #ffffff21;
+                backdrop-filter: blur(8px);
                 border-radius: 15px;
                 box-shadow: 1px 1px 10px #777;
                 color: var(--color6);
@@ -483,8 +486,8 @@
                 font-weight: 100;
             }
             fieldset {
-                border: 2px solid var(--color6);
-                border-radius: 15px;
+                border: 1px solid var(--color6);
+                border-radius: 10px;
             }
             fieldset > input {
                 accent-color: var(--color6);
@@ -503,6 +506,17 @@
                 background-image: url("/noun-email-6826295.svg");
                 background-repeat: no-repeat;
                 background-position: right 0.2em;
+            }
+            .form-circle {
+                width: 280px;
+                height: 250px;
+                position: absolute;
+                background-color: #fc85aecf;
+                bottom: -29.7%;
+                left: -12%;
+                border-radius: 50%;
+                z-index: -1;
+                filter: blur(3px);
             }
         </style>
     </head>
@@ -665,7 +679,7 @@
 
                 <fieldset>
                     <legend>
-                        Would you like us to send you info on new products
+                        Would you like us to send you info on new products?
                     </legend>
                     <input type="radio" id="yes" name="Option" value="Yes" />
                     <label for="yes">Yes</label>
@@ -673,6 +687,7 @@
                     <label for="no">No</label>
                 </fieldset>
                 <input type="submit" value="send" id="submit" />
+                <div class="form-circle"></div>
             </form>
         </section>
     </body>
