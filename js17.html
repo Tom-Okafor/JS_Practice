@@ -308,7 +308,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                box-shadow: 2px 2px 7px gray;
+                box-shadow: 2px 2px 12px #777;
             }
             .box::before {
                 content: "";
@@ -417,40 +417,55 @@
             form {
                 display: flex;
                 flex-direction: column;
+                padding: 2em;
+                border-radius: 10px;
+                width: 90vw;
+                justify-content: center;
+                align-content: center;
+                background: radial-gradient(
+                    400px at top right,
+                    #ffffadb9,
+                    var(--color5)
+                );
+                border: 1px solid #ffffada1;
+                backdrop-filter: blur(50px);
+                box-shadow: 0.5px 0.5px 12px #90909b;
             }
 
             label,
             input {
-                font-family: "Cormorant Garamond", Serif;
                 font-family: "Comfortaa", Sans-Serif;
                 font-size: 0.8em;
             }
-            label {
-                margin-bottom: 0.5em;
+            form > label {
+                margin-bottom: 0.8em;
             }
+
             [for="name"],
             [for="email"] {
                 text-transform: uppercase;
+            }
+
+            legend {
+                font-family: "Comfortaa", Sans-Serif;
+                padding: 0.5em 0.1em 1em 0.1em;
+                font-size: 0.8em;
+                text-transform: capitalize;
+            }
+            input {
+                padding: 0.5em;
+                margin-bottom: 2em;
             }
             fieldset > input:nth-of-type(1),
             fieldset > input:nth-of-type(2),
             fieldset > input:nth-of-type(3) {
                 margin-right: 0.2em;
-                margin-left: 1em;
             }
-            legend {
-                font-family: "Cormorant Garamond", Serif;
-                font-family: "Comfortaa", Sans-Serif;
-                padding: 0.5em;
-                font-size: 0.8em;
-            }
-            input {
-                padding: 0.5em;
-                margin-bottom: 1em;
-            }
-
             ::placeholder {
                 color: #90909b;
+            }
+            fieldset > label {
+                margin-right: 0.7em;
             }
             fieldset {
                 margin-bottom: 1.5em;
@@ -616,8 +631,7 @@
 
                 <fieldset>
                     <legend>
-                        Would you like us to send you information on new
-                        products
+                        Would you like us to send you info on new products
                     </legend>
                     <input type="radio" id="yes" name="Option" value="Yes" />
                     <label for="yes">Yes</label>
