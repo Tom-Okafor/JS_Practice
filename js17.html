@@ -270,8 +270,10 @@
 
             section p {
                 font-family: "Montserrat Alternates", Sans-Serif;
+                font-family: "Comfortaa", Sans-Serif;
+                color:;
                 font-size: 0.9em;
-                line-height: 1.6em;
+                line-height: 1.8em;
                 max-width: 40ch;
                 word-spacing: 0.15em;
                 margin-bottom: 1.5em;
@@ -378,7 +380,7 @@
                 background-size: 700%;
                 background-position: 13em;
                 background-repeat: repeat;
-                box-shadow: 1.5px 1.5px 5px #777;
+                box-shadow: 2px 2.5px 15px #777;
             }
 
             article:nth-of-type(2) > div::before {
@@ -394,7 +396,7 @@
                 background-position: 201em -186px;
             }
             article p {
-                max-width: 30ch;
+                max-width: 35ch;
             }
 
             article {
@@ -412,21 +414,46 @@
                 position: relative;
             }
 
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
             label,
             input {
-                display: block;
                 font-family: "Cormorant Garamond", Serif;
+                font-family: "Comfortaa", Sans-Serif;
+                font-size: 0.8em;
             }
             label {
                 margin-bottom: 0.5em;
+            }
+            [for="name"],
+            [for="email"] {
                 text-transform: uppercase;
+            }
+            fieldset > input:nth-of-type(1),
+            fieldset > input:nth-of-type(2),
+            fieldset > input:nth-of-type(3) {
+                margin-right: 0.2em;
+                margin-left: 1em;
             }
             legend {
                 font-family: "Cormorant Garamond", Serif;
+                font-family: "Comfortaa", Sans-Serif;
+                padding: 0.5em;
+                font-size: 0.8em;
             }
             input {
-                padding: 0.2em;
+                padding: 0.5em;
                 margin-bottom: 1em;
+            }
+
+            ::placeholder {
+                color: #90909b;
+            }
+            fieldset {
+                margin-bottom: 1.5em;
             }
         </style>
     </head>
@@ -545,10 +572,22 @@
         <section class="form">
             <form method="get" action="">
                 <label for="name">name</label>
-                <input type="text" id="name" name="Name" required />
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="your name"
+                    required
+                />
 
                 <label for="email">email</label>
-                <input type="email" id="email" name="Email" required />
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="your email"
+                    required
+                />
 
                 <fieldset>
                     <legend>interest?</legend>
