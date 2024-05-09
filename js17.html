@@ -492,13 +492,46 @@
                 border: 1px solid var(--color6);
                 border-radius: 10px;
             }
-            fieldset > input {
-                accent-color: var(--color);
-            }
 
+            fieldset > input {
+                accent-color: var(--color4);
+            }
+            fieldset > input:focus {
+                animation: accent-color 0.5s forwards;
+            }
+            @keyframes accent-color {
+                from {
+                    accent-color: var(--color6);
+                }
+                to {
+                    accent-color: var(--color4);
+                }
+            }
             form > input:focus {
                 outline: 0;
-                background-color: var(--color1);
+                background-color: #beebe9af;
+                padding: 1em;
+                animation: shake 0.3s step-end;
+            }
+            @keyframes shake {
+                0% {
+                    transform: translateX(0);
+                }
+                20% {
+                    transform: translateX(0.15em);
+                }
+                40% {
+                    transform: translateX(-0.25em);
+                }
+                60% {
+                    transform: translateX(0.35em);
+                }
+                80% {
+                    transform: translateX(-0.45em);
+                }
+                100% {
+                    transform: translateX(0);
+                }
             }
             form > input:nth-of-type(1) {
                 background-image: url("/noun-profile-89684.svg");
