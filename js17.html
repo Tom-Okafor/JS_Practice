@@ -317,7 +317,7 @@
                 width: 120px;
                 background: var(--color6);
                 background: linear-gradient(var(--color6) 50%, mintcream 50%);
-                animation: move 4s linear infinite forwards;
+                animation: move 5s ease-in-out infinite forwards;
             }
 
             @keyframes move {
@@ -423,11 +423,13 @@
                 justify-content: center;
                 align-content: center;
                 background: radial-gradient(
-                    500px at top right,
-                    #ffffadd9 40%,
-                    var(--color5) 40%
+                    circle at top right,
+                    #fc85ae8f 29.5%,
+                    var(--color5) 29.5%,
+                    var(--color5) 83%,
+                    #fc85ae8f 83%
                 );
-                border: 1px solid #ffffada1;
+                border: 1.5px solid #ffffada1;
                 backdrop-filter: blur(50px);
                 box-shadow: 0.5px 0.5px 12px #90909b;
                 position: relative;
@@ -475,11 +477,11 @@
                 margin-bottom: 2em;
                 border: 2px solid var(--color5);
                 background-color: #ffffff21;
-                backdrop-filter: blur(8px);
+                backdrop-filter: blur(20px);
                 border-radius: 15px;
                 box-shadow: 1px 1px 10px #777;
                 color: var(--color6);
-                font-weight: bold;
+                font-weight: bolder;
             }
             ::placeholder {
                 color: var(--color6);
@@ -507,7 +509,7 @@
                 background-repeat: no-repeat;
                 background-position: right 0.2em;
             }
-            .form-circle {
+            .form-crcle {
                 width: 280px;
                 height: 250px;
                 position: absolute;
