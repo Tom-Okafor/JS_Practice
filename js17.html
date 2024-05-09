@@ -317,7 +317,7 @@
                 width: 120px;
                 background: var(--color6);
                 background: linear-gradient(var(--color6) 50%, mintcream 50%);
-                animation: move 5s ease-in-out infinite forwards;
+                animation: move 5s linear infinite forwards;
             }
 
             @keyframes move {
@@ -470,6 +470,7 @@
             }
             fieldset {
                 margin-bottom: 1.5em;
+                padding-bottom: 1em;
             }
 
             form > input {
@@ -492,7 +493,7 @@
                 border-radius: 10px;
             }
             fieldset > input {
-                accent-color: var(--color6);
+                accent-color: var(--color);
             }
 
             form > input:focus {
