@@ -581,6 +581,9 @@
                 background-color: #a9f0ed;
                 border-radius: 3px;
                 border: 0.5px solid var(--color6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .display-box:nth-of-type(2) {
@@ -604,6 +607,36 @@
             .display-box:nth-of-type(18) {
                 grid-column: span 2;
             }
+            .display-logo {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .display-logo img {
+                height: 1.9em;
+                width: 1.9em;
+                position: relative;
+                margin-left: 1em;
+            }
+            .display-brand-name {
+                color: #00aeae;
+                font-family: "Cormorant Garamond";
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .display-brand-name span {
+                color: var(--color2);
+                font-family: "Montserrat Alternates";
+                text-transform: capitalize;
+            }
+            span.span {
+                font-family: "Cormorant Garamond";
+                text-transform: lowercase;
+                font-weight: 900;
+                font-size: 1.5em;
+                color: var(--color4);
+                margin-inline: 1.5px;
+            }
         </style>
     </head>
     <body>
@@ -612,7 +645,7 @@
                 <li class="brand-holder">
                     <ul class="brand">
                         <li><img src="furniture-svgrepo-com.svg" /></li>
-                        <li><span>fun</span>-iture</li>
+                        <li><span>fun</span><span class="span">-</span>iture</li>
                     </ul>
                 </li>
                 <li class="menu-holder" tabindex="1">
@@ -644,7 +677,14 @@
                 <div class="display-box"></div>
                 <div class="display-box"></div>
                 <div class="display-box"></div>
-                <div class="display-box"></div>
+                <div class="display-box">
+                    <div class="display-brand-name">
+                        <span>fun</span><span class="span">-</span>iture
+                    </div>
+                    <div class="display-logo">
+                        <img src="furniture-svgrepo-com.svg" />
+                    </div>
+                </div>
                 <div class="display-box"></div>
                 <div class="display-box"></div>
                 <div class="display-box"></div>
