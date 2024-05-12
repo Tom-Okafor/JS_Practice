@@ -243,7 +243,7 @@
                 margin: 5em 0 7em 0;
             }
             h3 {
-                font-size: 1.6em;
+                font-size: 1.8em;
                 font-family: "Cormorant Garamond";
                 font-weight: bolder;
                 text-transform: capitalize;
@@ -262,11 +262,23 @@
                     var(--color6) 318deg,
                     var(--color7) 318deg
                 );
-                background-size: 370%;
+                background-size: 350%;
                 background-repeat: repeat;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                animation: revealBackgroundToo 1s ease-out forwards;
+                animation: revealH3Background 1s ease-out forwards;
+            }
+
+            @keyframes revealH3Background {
+                60% {
+                    background-size: 190%;
+                    background-position: 7em -9em;
+                }
+
+                100% {
+                    background-size: 20%;
+                    background-position: 0;
+                }
             }
 
             section p {
@@ -557,22 +569,41 @@
             }
 
             .icon-display {
-                height: 15vh;
+                height: 13vh;
                 min-width: 100vw;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1.5fr 1fr;
+                grid-template-columns: 1fr 0.6fr 0.4fr 1fr 1fr 1fr 1fr 0.6fr 0.4fr 1fr;
+                grid-template-rows: 0.5fr 1.1fr 0.6fr;
                 gap: 0.15em;
+                margin-top: 4.2em;
             }
             .display-box {
-                background-color: var(--color1);
+                background-color: #a9f0ed;
                 border-radius: 3px;
+                border: 0.5px solid var(--color6);
             }
-           
+
+            .display-box:nth-of-type(2) {
+                grid-column: span 2;
+            }
+            .display-box:nth-of-type(7) {
+                grid-column: span 2;
+            }
+            .display-box:nth-of-type(9) {
+                grid-column: span 2;
+            }
             .display-box:nth-of-type(10) {
                 grid-column: span 6;
             }
-           
+            .display-box:nth-of-type(11) {
+                grid-column: span 2;
+            }
+            .display-box:nth-of-type(13) {
+                grid-column: span 2;
+            }
+            .display-box:nth-of-type(18) {
+                grid-column: span 2;
+            }
         </style>
     </head>
     <body>
