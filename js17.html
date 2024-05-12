@@ -557,17 +557,22 @@
             }
 
             .icon-display {
-                background-color: var(--color5);
                 height: 15vh;
                 min-width: 100vw;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1.5fr 1fr;
-                gap: 0.1em;
+                gap: 0.15em;
             }
             .display-box {
-                background-color: var(--color4);
+                background-color: var(--color1);
+                border-radius: 3px;
             }
+           
+            .display-box:nth-of-type(10) {
+                grid-column: span 6;
+            }
+           
         </style>
     </head>
     <body>
