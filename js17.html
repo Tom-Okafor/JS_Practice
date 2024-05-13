@@ -50,6 +50,7 @@
                 text-align: center;
                 font-size: 3rem;
                 margin-top: 3em;
+                line-height: 1.2em;
                 background: conic-gradient(
                     #3788cc 53deg,
                     var(--color2) 53deg,
@@ -247,7 +248,7 @@
                 font-family: "Cormorant Garamond";
                 font-weight: bolder;
                 text-transform: capitalize;
-                margin-bottom: 0.5em;
+                margin-bottom: 1em;
                 background: conic-gradient(
                     #3788cc 53deg,
                     var(--color2) 53deg,
@@ -412,7 +413,7 @@
             }
 
             article {
-                margin: 3em 0 7em 0;
+                margin: 3em 0 8em 0;
             }
             .carousel img {
                 width: 90vw;
@@ -555,26 +556,24 @@
                 background-repeat: no-repeat;
                 background-position: right 0.2em;
             }
-            .form-crcle {
-                width: 280px;
-                height: 250px;
-                position: absolute;
-                background-color: #fc85aecf;
-                bottom: -29.7%;
-                left: -12%;
-                border-radius: 50%;
-                z-index: -1;
-                filter: blur(3px);
+            form > input:nth-of-type(3):hover,
+            form > input:nth-of-type(3):focus {
+                color: var(--color4);
+                background: linear-gradient(
+                    170deg,
+                    transparent 60%,
+                    #fc85ae6d 60%
+                );
             }
 
             .icon-display {
                 height: 13vh;
                 min-width: 100vw;
                 display: grid;
-                grid-template-columns: 1fr 0.7fr 0.3fr 1fr 1fr 1fr 1fr 0.7fr 0.3fr 1fr;
+                grid-template-columns: 1fr 0.7fr 0.3fr 1fr 1fr 1fr 1fr 0.3fr 0.7fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
                 gap: 0.15em;
-                margin-top: 4.2em;
+                margin-top: 5em;
             }
             .display-box {
                 background-color: #a9f0ed;
@@ -637,7 +636,7 @@
                 margin-inline: 1.5px;
             }
 
-            .display-icon-list > img {
+            .display-icon-box img {
                 position: relative;
                 height: 3em;
             }
@@ -656,32 +655,26 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                right: 000%;
+                right: 0%;
             }
-            .display-icon-list:nth-of-type(6) {
+
+            .display-icon-list:nth-of-type(4),
+            .display-icon-list:nth-of-type(5),
+            .display-icon-list:nth-of-type(6),
+            .display-icon-list:nth-of-type(8),
+            .display-icon-list:nth-of-type(9),
+            .display-icon-list:nth-of-type(10),
+            .display-icon-list:nth-of-type(11),
+            .display-icon-list:nth-of-type(12),
+            .display-icon-list:nth-of-type(13),
+            .display-icon-list:nth-of-type(14) {
                 margin-top: 10%;
             }
             .display-icon-list:nth-of-type(2) {
                 margin-bottom: 10%;
             }
-            .display-icon-list:nth-of-type(4) {
-                margin-top: 10%;
-            }
-            .display-icon-list:nth-of-type(5) {
-                margin-top: 10%;
-            }
-            .display-icon-list:nth-of-type(9) {
-                margin-top: 10%;
-            }
-
-            .display-icon-list:nth-of-type(8) > img {
-                margin-top: 10%;
-            }
-            .display-icon-list:nth-of-type(10) > img {
-                margin-top: 10%;
-            }
-            .display-icon-list:nth-of-type(11) > img {
-                margin-top: 10%;
+            .list-left {
+                right: -100%;
             }
         </style>
     </head>
@@ -726,6 +719,71 @@
                 <div class="display-box"></div>
                 <div class="display-box">
                     <ul class="display-icon-box">
+                        <li class="display-icon-list list-left">
+                            <img
+                                src="furniture-bedroom-single-bed-svgrepo-com.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img
+                                src="furniture-home-interior-kitchen-washtufle-svgrepo-com.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img
+                                src="furniture-house-living-17-svgrepo-com.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-armchair-2174085.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-armchair-3140520.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-armchair-3463356.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-dinner-table-1685992.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-dinner-table-4426484.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-egg-chair-1578592.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img
+                                src="noun-mid-century-modern-dresser-5713237.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-swing-chair-4921144.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-furniture-1008733.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-hall-tree-1461255.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="noun-shelf-5088691.svg" />
+                        </li>
+                        <li class="display-icon-list list-left">
+                            <img src="3006697.svg" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="display-box">
+                    <div class="display-brand-name">
+                        <span>fun</span><span class="span">-</span>iture
+                    </div>
+                    <div class="display-logo">
+                        <img src="furniture-svgrepo-com.svg" />
+                    </div>
+                </div>
+                <div class="display-box">
+                    <ul class="display-icon-box">
                         <li class="display-icon-list">
                             <img
                                 src="furniture-bedroom-single-bed-svgrepo-com.svg"
@@ -767,17 +825,20 @@
                         <li class="display-icon-list">
                             <img src="noun-swing-chair-4921144.svg" />
                         </li>
+                        <li class="display-icon-list">
+                            <img src="noun-furniture-1008733.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-hall-tree-1461255.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-shelf-5088691.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="3006697.svg" />
+                        </li>
                     </ul>
                 </div>
-                <div class="display-box">
-                    <div class="display-brand-name">
-                        <span>fun</span><span class="span">-</span>iture
-                    </div>
-                    <div class="display-logo">
-                        <img src="furniture-svgrepo-com.svg" />
-                    </div>
-                </div>
-                <div class="display-box"></div>
                 <div class="display-box"></div>
                 <div class="display-box"></div>
                 <div class="display-box"></div>
@@ -927,7 +988,6 @@
                     <label for="no">No</label>
                 </fieldset>
                 <input type="submit" value="send" id="submit" />
-                <div class="form-circle"></div>
             </form>
         </section>
     </body>
