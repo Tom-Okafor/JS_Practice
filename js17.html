@@ -143,7 +143,7 @@
             .brand span {
                 text-transform: capitalize;
                 font-size: 1.15rem;
-                font-family: "Montserrat Alternates";
+                font-family: "Lumanosimo";
                 color: var(--color2);
             }
             .brand > li:nth-child(2) {
@@ -282,7 +282,6 @@
             }
 
             section p {
-                font-family: "Montserrat Alternates", Sans-Serif;
                 font-family: "Comfortaa", Sans-Serif;
                 color:;
                 font-size: 0.9em;
@@ -572,8 +571,8 @@
                 height: 13vh;
                 min-width: 100vw;
                 display: grid;
-                grid-template-columns: 1fr 0.6fr 0.4fr 1fr 1fr 1fr 1fr 0.6fr 0.4fr 1fr;
-                grid-template-rows: 0.5fr 1.1fr 0.6fr;
+                grid-template-columns: 1fr 0.7fr 0.3fr 1fr 1fr 1fr 1fr 0.7fr 0.3fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
                 gap: 0.15em;
                 margin-top: 4.2em;
             }
@@ -626,7 +625,7 @@
             }
             .display-brand-name span {
                 color: var(--color2);
-                font-family: "Montserrat Alternates";
+                font-family: "Lumanosimo";
                 text-transform: capitalize;
             }
             span.span {
@@ -637,6 +636,53 @@
                 color: var(--color4);
                 margin-inline: 1.5px;
             }
+
+            .display-icon-list > img {
+                position: relative;
+                height: 3em;
+            }
+
+            .display-icon-box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+            }
+            .display-icon-list {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                right: 000%;
+            }
+            .display-icon-list:nth-of-type(6) {
+                margin-top: 10%;
+            }
+            .display-icon-list:nth-of-type(2) {
+                margin-bottom: 10%;
+            }
+            .display-icon-list:nth-of-type(4) {
+                margin-top: 10%;
+            }
+            .display-icon-list:nth-of-type(5) {
+                margin-top: 10%;
+            }
+            .display-icon-list:nth-of-type(9) {
+                margin-top: 10%;
+            }
+
+            .display-icon-list:nth-of-type(8) > img {
+                margin-top: 10%;
+            }
+            .display-icon-list:nth-of-type(10) > img {
+                margin-top: 10%;
+            }
+            .display-icon-list:nth-of-type(11) > img {
+                margin-top: 10%;
+            }
         </style>
     </head>
     <body>
@@ -645,7 +691,9 @@
                 <li class="brand-holder">
                     <ul class="brand">
                         <li><img src="furniture-svgrepo-com.svg" /></li>
-                        <li><span>fun</span><span class="span">-</span>iture</li>
+                        <li>
+                            <span>fun</span><span class="span">-</span>iture
+                        </li>
                     </ul>
                 </li>
                 <li class="menu-holder" tabindex="1">
@@ -676,7 +724,51 @@
                 <div class="display-box"></div>
                 <div class="display-box"></div>
                 <div class="display-box"></div>
-                <div class="display-box"></div>
+                <div class="display-box">
+                    <ul class="display-icon-box">
+                        <li class="display-icon-list">
+                            <img
+                                src="furniture-bedroom-single-bed-svgrepo-com.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list">
+                            <img
+                                src="furniture-home-interior-kitchen-washtufle-svgrepo-com.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list">
+                            <img
+                                src="furniture-house-living-17-svgrepo-com.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-armchair-2174085.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-armchair-3140520.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-armchair-3463356.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-dinner-table-1685992.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-dinner-table-4426484.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-egg-chair-1578592.svg" />
+                        </li>
+                        <li class="display-icon-list">
+                            <img
+                                src="noun-mid-century-modern-dresser-5713237.svg"
+                            />
+                        </li>
+                        <li class="display-icon-list">
+                            <img src="noun-swing-chair-4921144.svg" />
+                        </li>
+                    </ul>
+                </div>
                 <div class="display-box">
                     <div class="display-brand-name">
                         <span>fun</span><span class="span">-</span>iture
