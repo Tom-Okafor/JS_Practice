@@ -291,8 +291,12 @@
                 word-spacing: 0.15em;
                 margin-bottom: 1.5em;
             }
-            .about p {
-                text-indent: 2em;
+            /*   .about p {
+              text-indent: 2em;
+          } */
+
+            .about > p {
+                margin-left: 1em;
             }
             .pHide {
                 /*                 opacity: 0;
@@ -686,6 +690,16 @@
             .list-left {
                 right: -100%;
             }
+            .pLine {
+                height: 4.5em;
+                width: 0.28em;
+                border-radius: 20px;
+                background-color: var(--color4);
+            }
+            .pHolder {
+                display: grid;
+                grid-template-columns: 0.05fr 1fr;
+            }
         </style>
     </head>
     <body>
@@ -862,13 +876,16 @@
 
         <section class="about">
             <h3 class="">who are we?</h3>
-            <p class="pHide">
-                Aliqua sit consectetur nisi proident magna fugiat dolore in.
-                Eiusmod anim in ullamco veniam qui excepteur Lorem adipisicing
-                duis. Veniam magna mollit fugiat ut est adipisicing qui
-                consequat. Non sit amet veniam nostrud velit commodo ex laboris
-                ex aliqua nulla esse velit exercitation.
-            </p>
+            <div class="pHolder">
+                <div class="pLine"></div>
+                <p class="pHide">
+                    Aliqua sit consectetur nisi proident magna fugiat dolore in.
+                    Eiusmod anim in ullamco veniam qui excepteur Lorem
+                    adipisicing duis. Veniam magna mollit fugiat ut est
+                    adipisicing qui consequat. Non sit amet veniam nostrud velit
+                    commodo ex laboris ex aliqua nulla esse velit exercitation.
+                </p>
+            </div>
 
             <p class="pHide">
                 Nisi fugiat exercitation nisi qui esse ut non eiusmod velit
