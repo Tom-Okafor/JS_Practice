@@ -575,7 +575,7 @@
             form > input:nth-of-type(3):hover,
             form > input:nth-of-type(3):focus {
                 color: var(--color4);
-              
+
                 width: 80%;
                 margin-inline: auto;
             }
@@ -694,7 +694,15 @@
                 border-radius: 20px;
                 background-color: var(--color2);
                 box-shadow: 2px 1px 3px #777;
+                animation: levitate 800ms ease-in infinite alternate;
             }
+
+            @keyframes levitate {
+                to {
+                    transform: translateY(0.5em) translateX(0.03em);
+                }
+            }
+
             .pHolder {
                 display: grid;
                 grid-template-columns: 0.05fr 1fr;
