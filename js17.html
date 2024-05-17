@@ -163,7 +163,8 @@
                 align-items: flex-end;
                 cursor: pointer;
                 gap: 0.25em;
-                animation: animateMenu 1s linear forwards;
+                animation: animateMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
             }
             .menu-holder > div {
                 border-radius: 20px;
@@ -173,19 +174,22 @@
                 height: 0.155em;
                 width: 2.7em;
                 background: var(--color4);
-                animation: animateLineTwo 1s ease-in-out forwards;
+                animation: animateLineTwo 1s cubic-bezier(0.22,0.61,0.36,1)
+                    forwards;
             }
             .lineOne {
                 height: 0.15em;
                 width: 1.8em;
                 background: var(--color6);
-                animation: animateLineOne 1s ease-in-out forwards;
+                animation: animateLineOne 1s cubic-bezier(0.22,0.61,0.36,1)
+                    forwards;
             }
             .lineThree {
                 height: 0.15em;
                 width: 1.3em;
                 background: var(--color6);
-                animation: animateLineThree 1s ease-in-out forwards;
+                animation: animateLineThree 1s cubic-bezier(0.22,0.61,0.36,1)
+                    forwards;
             }
 
             @keyframes animateMenu {
