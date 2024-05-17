@@ -189,84 +189,97 @@
             }
 
             @keyframes animateMenu {
-                68% {
+                48% {
                     flex-direction: column;
                 }
-                70% {
+                50% {
                     flex-direction: row;
                     justify-content: center;
                     align-items: baseline;
+                }
+                60% {
+                    gap: 1em;
                 }
                 100% {
                     flex-direction: row;
                     justify-content: center;
                     align-items: baseline;
+                    gap: 0.25em;
                 }
             }
             @keyframes animateLineTwo {
-                60% {
+                40% {
                     opacity: 0;
                     height: 0.155em;
                     width: 2.7em;
                     transform: translateX(-5em);
                 }
-                65% {
+                45% {
                     transform: translateX(0em);
                 }
-                80% {
+                60% {
                     width: 0.155em;
                     height: 2.7em;
                     opacity: 0;
+                }
+                80% {
+                    transform: translateY(-1em);
                 }
                 100% {
                     width: 0.155em;
                     height: 2.7em;
                     opacity: 1;
+                    transform: translateY(0em);
                 }
             }
             @keyframes animateLineThree {
-                60% {
+                40% {
                     transform: translateX(5em);
                     opacity: 0;
                     height: 0.15em;
                     width: 1.3em;
                 }
-                65% {
+                45% {
                     transform: translateX(0em);
                 }
-                80% {
+                60% {
                     width: 0.15em;
                     height: 1.3em;
                     opacity: 0;
                 }
-                90% {
-                    opacity: 0;
+                80% {
+                    transform: translateY(1em);
                 }
                 100% {
                     width: 0.15em;
                     height: 1.3em;
                     opacity: 1;
+                    transform: translateY(0em);
                 }
             }
             @keyframes animateLineOne {
-                60% {
+                40% {
                     transform: translateX(5em);
                     opacity: 0;
                     height: 0.15em;
                     width: 1.8em;
                 }
-                65% {
+                45% {
                     transform: translateX(0em);
                 }
-                80% {
+                60% {
                     width: 0.15em;
                     height: 1.8em;
                     opacity: 0;
+                }
+                80% {
+                    transform: translateY(1em);
                 }
                 100% {
                     width: 0.15em;
                     height: 1.8em;
                     opacity: 1;
+                    transform: translateY(0em);
                 }
             }
 
