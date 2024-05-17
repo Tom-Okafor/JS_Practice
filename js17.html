@@ -173,13 +173,13 @@
                 height: 0.155em;
                 width: 2.7em;
                 background: var(--color4);
-                animation: animateLineTwo 1s linear forwards;
+                animation: animateLineTwo 1s ease-in-out forwards;
             }
             .lineOne {
                 height: 0.15em;
                 width: 1.8em;
                 background: var(--color6);
-                animation: animateLineOne 1s linear forwards;
+                animation: animateLineOne 1s ease-in-out forwards;
             }
             .lineThree {
                 height: 0.15em;
@@ -189,26 +189,84 @@
             }
 
             @keyframes animateMenu {
-                50% {
-                    flex-direction:;
+                68% {
+                    flex-direction: column;
+                }
+                70% {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: baseline;
+                }
+                100% {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: baseline;
                 }
             }
             @keyframes animateLineTwo {
                 60% {
-                    transform: translateX(-3em);
                     opacity: 0;
+                    height: 0.155em;
+                    width: 2.7em;
+                    transform: translateX(-5em);
+                }
+                65% {
+                    transform: translateX(0em);
+                }
+                80% {
+                    width: 0.155em;
+                    height: 2.7em;
+                    opacity: 0;
+                }
+                100% {
+                    width: 0.155em;
+                    height: 2.7em;
+                    opacity: 1;
                 }
             }
             @keyframes animateLineThree {
                 60% {
-                    transform: translateX(3em);
+                    transform: translateX(5em);
                     opacity: 0;
+                    height: 0.15em;
+                    width: 1.3em;
+                }
+                65% {
+                    transform: translateX(0em);
+                }
+                80% {
+                    width: 0.15em;
+                    height: 1.3em;
+                    opacity: 0;
+                }
+                90% {
+                    opacity: 0;
+                }
+                100% {
+                    width: 0.15em;
+                    height: 1.3em;
+                    opacity: 1;
                 }
             }
             @keyframes animateLineOne {
                 60% {
-                    transform: translateX(3em);
+                    transform: translateX(5em);
                     opacity: 0;
+                    height: 0.15em;
+                    width: 1.8em;
+                }
+                65% {
+                    transform: translateX(0em);
+                }
+                80% {
+                    width: 0.15em;
+                    height: 1.8em;
+                    opacity: 0;
+                }
+                100% {
+                    width: 0.15em;
+                    height: 1.8em;
+                    opacity: 1;
                 }
             }
 
