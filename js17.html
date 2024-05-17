@@ -163,74 +163,63 @@
                 align-items: flex-end;
                 cursor: pointer;
                 gap: 0.25em;
+                animation: animateMenu 1s linear forwards;
             }
             .menu-holder > div {
                 border-radius: 20px;
-            }
-            @keyframes anim {
             }
 
             .lineTwo {
                 height: 0.155em;
                 width: 2.7em;
                 background: var(--color4);
+                animation: animateLineTwo 1s linear forwards;
             }
             .lineOne {
                 height: 0.15em;
                 width: 1.8em;
                 background: var(--color6);
+                animation: animateLineOne 1s linear forwards;
             }
             .lineThree {
                 height: 0.15em;
                 width: 1.3em;
                 background: var(--color6);
+                animation: animateLineThree 1s ease-in-out forwards;
             }
-            @keyframes anima {
-                to {
-                    width: 0.15em;
-                    height: 1.4em;
-                    background: var(--color6);
+
+            @keyframes animateMenu {
+                50% {
+                    flex-direction:;
                 }
             }
-            @keyframes animb {
-                to {
-                    width: 0.15em;
-                    height: 2.5em;
-                    background: var(--color4);
+            @keyframes animateLineTwo {
+                60% {
+                    transform: translateX(-3em);
+                    opacity: 0;
                 }
             }
-            @keyframes animc {
-                to {
-                    width: 0.15em;
-                    height: 1.1em;
-                    background: var(--color6);
+            @keyframes animateLineThree {
+                60% {
+                    transform: translateX(3em);
+                    opacity: 0;
+                }
+            }
+            @keyframes animateLineOne {
+                60% {
+                    transform: translateX(3em);
+                    opacity: 0;
                 }
             }
 
             .menu-holderToo {
-                display: grid;
-                height: 100%;
-                width: 5em;
-                grid-template-columns: 0.2em 0.2em 0.2em;
-                gap: 0.15em;
-                justify-content: flex-end;
-                align-content: center;
             }
 
             .lineTwoToo {
-                width: 0.15em;
-                height: 2.5em;
-                background: var(--color4);
             }
             .lineOneToo {
-                width: 0.15em;
-                height: 1.4em;
-                background: var(--color6);
             }
             .lineThreeToo {
-                width: 0.15em;
-                height: 1.1em;
-                background: var(--color6);
             }
             section {
                 margin: 5em 0 7em 0;
