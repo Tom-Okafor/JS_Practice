@@ -155,45 +155,56 @@
             }
 
             .menu-holder {
-                display: flex;
+                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 width: 5em;
                 justify-content: center;
                 align-items: flex-end;
                 cursor: pointer;
-                gap: 0.25em;
-                animation: animateMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;
-                animation-delay: 5s;
+                gap: 0.25em; 
+               
             }
+
             .menu-holder > div {
                 border-radius: 20px;
             }
 
             .lineTwo {
-                height: 0.155em;
+                 height: 0.155em;
                 width: 2.7em;
                 background: var(--color4);
-                animation: animateLineTwo 1.5s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;
-                animation-delay: 5s;
+               
             }
             .lineOne {
-                height: 0.15em;
+                  height: 0.15em;
                 width: 1.8em;
                 background: var(--color6);
-                animation: animateLineOne 1.3s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;
-                animation-delay: 5s;
+             
             }
             .lineThree {
                 height: 0.15em;
                 width: 1.3em;
                 background: var(--color6);
+           
+            }
+
+            .menu-holderToo {
+                animation: animateMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+            }
+
+            .lineTwoToo {
+                animation: animateLineTwo 1.6s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+            }
+            .lineOneToo {
+                animation: animateLineOne 1.3s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+            }
+            .lineThreeToo {
                 animation: animateLineThree 1s cubic-bezier(0.22, 0.61, 0.36, 1)
                     forwards;
-                animation-delay: 5s;
             }
 
             @keyframes animateMenu {
@@ -291,16 +302,135 @@
                     transform: translateY(0em);
                 }
             }
+            
+            
+            .menu-HolderReverse {
+              animation: reverseMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;  
+                    animation-delay: 3s;
+                    }
+                    
+           @keyframes reverseMenu{
+           48% {
+            flex-direction: row;
+                }
+                50% {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+                60% {
+                    gap: 1em;
+                }
+                100% {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    gap: 0.25em;
+                }
+                    }
+                    
+                    
+            .lineTwoReverse {
+              animation: reverseLineTwo 1s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;          animation-delay: 3s;
 
-            .menu-holderToo {
+            }
+            
+            @keyframes reverseLineTwo{
+                 40% {
+                    opacity: 0;
+                    width: 0.155em;
+                    height: 2.7em;
+                    transform: translateY(-5em);
+                }
+
+                45% {
+                    transform: translateX(0em);
+                }
+                60% {
+                    height: 0.155em;
+                    width: 2.7em;
+                    opacity: 0;
+                }
+                80% {
+                    transform: translateX(-5em);
+                }
+                100% {
+                    height: 0.155em;
+                    width: 2.7em;
+                    opacity: 1;
+                    transform: translateX(0em);
+                }
+            }
+            
+            
+            .lineThreeReverse {
+              animation: reverseLineThree 1.3s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;          animation-delay: 3s;
+
+            }
+            
+            @keyframes reverseLineThree{
+               40% {
+                    transform: translateY(3em);
+                    opacity: 0;
+                    width: 0.15em;
+                    height: 1.3em;
+                }
+                45% {
+                    transform: translateY(0em);
+                }
+                60% {
+                    height: 0.15em;
+                    width: 1.3em;
+                    opacity: 0;
+                }
+                80% {
+                    transform: translateX(3em);
+                }
+                100% {
+                    height: 0.15em;
+                    width: 1.3em;
+                    opacity: 1;
+                    transform: translateX(0em);
+                }
+            }
+            
+            
+            .lineOneReverse {
+              animation: reverseLineOne 1.6s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+                 animation-delay: 3s;
+
+            }
+            
+            @keyframes reverseLineOne{
+               40% {
+                    transform: translateY(3em);
+                    opacity: 0;
+                    width: 0.15em;
+                    height: 1.8em;
+                }
+                45% {
+                    transform: translateY(0em);
+                }
+                60% {
+                    height: 0.15em;
+                    width: 1.8em;
+                    opacity: 0;
+                }
+                80% {
+                    transform: translateX(5em);
+                }
+                100% {
+                    height: 0.15em;
+                    width: 1.8em;
+                    opacity: 1;
+                    transform: translateX(0em);
+                }
             }
 
-            .lineTwoToo {
-            }
-            .lineOneToo {
-            }
-            .lineThreeToo {
-            }
             section {
                 margin: 5em 0 7em 0;
             }
@@ -522,13 +652,12 @@
                 justify-content: center;
                 border-radius: 10px;
                 width: 90vw;
-                background: radial-gradient(
-                    circle at top right,
-                    #fc85ae8f 29.5%,
-                    var(--color5) 29.5%,
+                background: radial-gradient( at top right,
+                    #fc85ae8f 25%,
+                    var(--color5) 25%,
                     var(--color5) 83%,
                     #fc85ae8f 83%
-                );
+                ); 
                 border: 1.5px solid #ffffada1;
                 backdrop-filter: blur(50px);
                 box-shadow: 0.5px 0.5px 12px #90909b;
@@ -576,7 +705,7 @@
                 margin-bottom: 2em;
                 border: 2px solid var(--color5);
                 background-color: #ffffff21;
-                backdrop-filter: blur(20px);
+                backdrop-filter: blur(50px);
                 border-radius: 15px;
                 box-shadow: 1px 1px 10px #777;
                 color: var(--color6);
