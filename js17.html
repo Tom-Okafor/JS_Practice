@@ -165,6 +165,7 @@
                 gap: 0.25em;
                 animation: animateMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
                     forwards;
+                animation-delay: 5s;
             }
             .menu-holder > div {
                 border-radius: 20px;
@@ -174,22 +175,25 @@
                 height: 0.155em;
                 width: 2.7em;
                 background: var(--color4);
-                animation: animateLineTwo 1s cubic-bezier(0.22,0.61,0.36,1)
+                animation: animateLineTwo 1.5s cubic-bezier(0.22, 0.61, 0.36, 1)
                     forwards;
+                animation-delay: 5s;
             }
             .lineOne {
                 height: 0.15em;
                 width: 1.8em;
                 background: var(--color6);
-                animation: animateLineOne 1s cubic-bezier(0.22,0.61,0.36,1)
+                animation: animateLineOne 1.3s cubic-bezier(0.22, 0.61, 0.36, 1)
                     forwards;
+                animation-delay: 5s;
             }
             .lineThree {
                 height: 0.15em;
                 width: 1.3em;
                 background: var(--color6);
-                animation: animateLineThree 1s cubic-bezier(0.22,0.61,0.36,1)
+                animation: animateLineThree 1s cubic-bezier(0.22, 0.61, 0.36, 1)
                     forwards;
+                animation-delay: 5s;
             }
 
             @keyframes animateMenu {
@@ -218,6 +222,7 @@
                     width: 2.7em;
                     transform: translateX(-5em);
                 }
+
                 45% {
                     transform: translateX(0em);
                 }
@@ -238,7 +243,7 @@
             }
             @keyframes animateLineThree {
                 40% {
-                    transform: translateX(5em);
+                    transform: translateX(10em);
                     opacity: 0;
                     height: 0.15em;
                     width: 1.3em;
@@ -263,7 +268,7 @@
             }
             @keyframes animateLineOne {
                 40% {
-                    transform: translateX(5em);
+                    transform: translateX(10em);
                     opacity: 0;
                     height: 0.15em;
                     width: 1.8em;
