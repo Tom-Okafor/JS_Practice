@@ -155,15 +155,14 @@
             }
 
             .menu-holder {
-                 display: flex;
+                display: flex;
                 flex-direction: column;
                 height: 100%;
                 width: 5em;
                 justify-content: center;
                 align-items: flex-end;
                 cursor: pointer;
-                gap: 0.25em; 
-               
+                gap: 0.25em;
             }
 
             .menu-holder > div {
@@ -171,22 +170,19 @@
             }
 
             .lineTwo {
-                 height: 0.155em;
+                height: 0.155em;
                 width: 2.7em;
                 background: var(--color4);
-               
             }
             .lineOne {
-                  height: 0.15em;
+                height: 0.15em;
                 width: 1.8em;
                 background: var(--color6);
-             
             }
             .lineThree {
                 height: 0.15em;
                 width: 1.3em;
                 background: var(--color6);
-           
             }
 
             .menu-holderToo {
@@ -302,17 +298,16 @@
                     transform: translateY(0em);
                 }
             }
-            
-            
+
             .menu-HolderReverse {
-              animation: reverseMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;  
-                    animation-delay: 3s;
-                    }
-                    
-           @keyframes reverseMenu{
-           48% {
-            flex-direction: row;
+                animation: reverseMenu 1s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes reverseMenu {
+                48% {
+                    flex-direction: row;
                 }
                 50% {
                     flex-direction: column;
@@ -328,17 +323,16 @@
                     align-items: flex-end;
                     gap: 0.25em;
                 }
-                    }
-                    
-                    
-            .lineTwoReverse {
-              animation: reverseLineTwo 1s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;          animation-delay: 3s;
-
             }
-            
-            @keyframes reverseLineTwo{
-                 40% {
+
+            .lineTwoReverse {
+                animation: reverseLineTwo 1s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes reverseLineTwo {
+                40% {
                     opacity: 0;
                     width: 0.155em;
                     height: 2.7em;
@@ -363,16 +357,15 @@
                     transform: translateX(0em);
                 }
             }
-            
-            
-            .lineThreeReverse {
-              animation: reverseLineThree 1.3s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;          animation-delay: 3s;
 
+            .lineThreeReverse {
+                animation: reverseLineThree 1.3s
+                    cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+                animation-delay: 3s;
             }
-            
-            @keyframes reverseLineThree{
-               40% {
+
+            @keyframes reverseLineThree {
+                40% {
                     transform: translateY(3em);
                     opacity: 0;
                     width: 0.15em;
@@ -396,17 +389,15 @@
                     transform: translateX(0em);
                 }
             }
-            
-            
-            .lineOneReverse {
-              animation: reverseLineOne 1.6s cubic-bezier(0.22, 0.61, 0.36, 1)
-                    forwards;
-                 animation-delay: 3s;
 
+            .lineOneReverse {
+                animation: reverseLineOne 1.6s cubic-bezier(0.22, 0.61, 0.36, 1)
+                    forwards;
+                animation-delay: 3s;
             }
-            
-            @keyframes reverseLineOne{
-               40% {
+
+            @keyframes reverseLineOne {
+                40% {
                     transform: translateY(3em);
                     opacity: 0;
                     width: 0.15em;
@@ -482,8 +473,8 @@
                 margin-bottom: 1.5em;
             }
             /*   .about p {
-              text-indent: 2em;
-          } */
+                text-indent: 2em;
+            } */
 
             .about > p {
                 margin-left: 1em;
@@ -497,7 +488,7 @@
             }
             .pHide {
                 /*                 opacity: 0;
-            */
+              */
             }
 
             .intro,
@@ -568,18 +559,19 @@
                 font-family: "Montserrat Alternates", Sans-Serif;
             }
 
-            article img {
-                width: 75vw;
-            }
-
             .article-div {
                 width: 75vw;
+                height: 40vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 3em;
                 position: relative;
                 left: 2vw;
+            }
+            .article-div > img {
+                position: absolute;
+                width: 100%;
             }
 
             .article-div::before {
@@ -652,12 +644,13 @@
                 justify-content: center;
                 border-radius: 10px;
                 width: 90vw;
-                background: radial-gradient( at top right,
-                    #fc85ae8f 25%,
-                    var(--color5) 25%,
-                    var(--color5) 83%,
-                    #fc85ae8f 83%
-                ); 
+                background: radial-gradient(
+                    circle at top right,
+                    #fc85ae8f 26.5%,
+                    var(--color5) 26.5%,
+                    var(--color5) 85%,
+                    #fc85ae8f 85%
+                );
                 border: 1.5px solid #ffffada1;
                 backdrop-filter: blur(50px);
                 box-shadow: 0.5px 0.5px 12px #90909b;
@@ -705,7 +698,7 @@
                 margin-bottom: 2em;
                 border: 2px solid var(--color5);
                 background-color: #ffffff21;
-                backdrop-filter: blur(50px);
+                backdrop-filter: blur(20px);
                 border-radius: 15px;
                 box-shadow: 1px 1px 10px #777;
                 color: var(--color6);
