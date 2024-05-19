@@ -692,7 +692,11 @@
                 margin-bottom: 1.5em;
                 padding-bottom: 1em;
             }
-
+            fieldset:nth-of-type(1) {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+            }
             form > input {
                 padding: 0.8em;
                 margin-bottom: 2em;
@@ -713,10 +717,10 @@
                 border-radius: 10px;
             }
 
-            fieldset > input {
+            fieldset input {
                 accent-color: var(--color4);
             }
-            fieldset > input:focus {
+            fieldset input:focus {
                 animation: accent-color 0.5s forwards;
             }
             @keyframes accent-color {
@@ -1477,27 +1481,33 @@
 
                 <fieldset>
                     <legend>interest?</legend>
-                    <input
-                        type="radio"
-                        id="buyer"
-                        name="interest"
-                        value="buyer"
-                    />
-                    <label for="buyer">Buyer</label>
-                    <input
-                        type="radio"
-                        id="visiting"
-                        name="interest"
-                        value="visiting"
-                    />
-                    <label for="visiting">Visitor</label>
-                    <input
-                        type="radio"
-                        id="other"
-                        name="interest"
-                        value="other"
-                    />
-                    <label for="other">Other</label>
+                    <div>
+                        <input
+                            type="radio"
+                            id="buyer"
+                            name="interest"
+                            value="buyer"
+                        />
+                        <label for="buyer">Buyer</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="visiting"
+                            name="interest"
+                            value="visiting"
+                        />
+                        <label for="visiting">Visitor</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="other"
+                            name="interest"
+                            value="other"
+                        />
+                        <label for="other">Other</label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
