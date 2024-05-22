@@ -907,7 +907,7 @@
             }
 
             .testimonial-block {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 align-items: center;
                 gap: 2em;
@@ -918,15 +918,20 @@
                 height: 150px;
                 width: 150px;
                 border-radius: 50%;
-                box-shadow: 2px 2px 5px 2px #555;
-                object-fit: none;
-                animation: fit 1s ease forwards;
-                animation-delay: 3s;
+                box-shadow: 1px 1px 3px 2px #555;
             }
-            @keyframes fit {
-                to {
-                    object-fit: fill;
-                }
+            .testimonial-block h4 {
+                font-size: 1.3em;
+                color: var(--color7);
+            }
+            .testimonial-block strong {
+                text-transform: capitalize;
+                font-weight: 600;
+                color: var(--color7);
+                display: block;
+            }
+            .visible-block {
+                display: flex;
             }
         </style>
     </head>
@@ -1483,14 +1488,15 @@
         </section>
 
         <section class="testimonial" id="testimonial">
-            <div class="testimonial-block">
+            <div class="testimonial-block visible-block">
                 <img src="/testimonial.jpeg" alt="person's face" />
-                <h4>name</h4>
+                <h4>Aubrey Donovan</h4>
                 <p>
-                    praise for furniture:Lorem ad incididunt voluptate nisi
-                    ullamco. Consequat ad cillum fugiat aliquip veniam dolor
-                    veniam magna Lorem. Velit nostrud consectetur commodo duis
-                    officia elit labore quis sunt. Velit id proident ex et ex.
+                    <strong>praise for furniture</strong> Lorem ad incididunt
+                    voluptate nisi ullamco. Consequat ad cillum fugiat aliquip
+                    veniam dolor veniam magna Lorem. Velit nostrud consectetur
+                    commodo duis officia elit labore quis sunt. Velit id
+                    proident ex et ex.
                 </p>
             </div>
             <div class="testimonial-block">
