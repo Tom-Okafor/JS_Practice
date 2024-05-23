@@ -952,16 +952,27 @@
             }
             a {
                 text-decoration: none;
-                color: var(--color7);
+                color: var(--color3);
             }
             .menu {
                 position: absolute;
-                height: 300px;
+                height: 250px;
+                width: 150px;
                 display: grid;
                 grid-template-columns: 1fr;
                 right: 0;
                 top: 12vh;
                 z-index: 2;
+                gap: 2px;
+            }
+            .menu li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background: var(--color6);
+                border-radius: 5px;
+                border: 1px solid var(--color4);
             }
         </style>
     </head>
