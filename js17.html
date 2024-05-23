@@ -129,6 +129,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                position: relative;
             }
             header li {
                 display: inline;
@@ -949,6 +950,19 @@
             .visible-block {
                 display: flex;
             }
+            a {
+                text-decoration: none;
+                color: var(--color7);
+            }
+            .menu {
+                position: absolute;
+                height: 300px;
+                display: grid;
+                grid-template-columns: 1fr;
+                right: 0;
+                top: 12vh;
+                z-index: 2;
+            }
         </style>
     </head>
     <body>
@@ -969,18 +983,18 @@
                 </li>
                 <ul class="menu">
                     <li class="menu-item">
-                      <a href="">about</a>
-                      </li>
+                        <a href="">about</a>
+                    </li>
                     <li class="menu-item">
-                      <a href="">features</a>
-                      </li>
+                        <a href="">features</a>
+                    </li>
                     <li class="menu-item">
-                      <a href="">carousel</a>
-                      </li>
+                        <a href="">carousel</a>
+                    </li>
                     <li class="menu-item"><a href="">testimonial</a></li>
                     <li class="menu-item">
-                      <a href="">contact</a>
-                      </li>
+                        <a href="">contact</a>
+                    </li>
                 </ul>
             </ul>
         </header>
