@@ -973,6 +973,7 @@
                 background: var(--color4);
                 border-radius: 5px;
                 box-shadow: 1px 3px 5px #555;
+                overflow: hidden;
             }
             .menu a {
                 width: 100%;
@@ -987,7 +988,24 @@
                 letter-spacing: 1.5px;
                 background: #00000035;
                 border-radius: 5px;
+                transform: translateY(4em);
+                animation: rise 1s ease-in-out forwards;
             }
+
+            @keyframes rise {
+                0% {
+                    background: transparent;
+                }
+                60% {
+                    background: transparent;
+                    transform: translateY(0);
+                }
+                100% {
+                    background: #00000035;
+                    transform: translateY(0);
+                }
+            }
+
             .menu-item:first-child {
                 background: linear-gradient(
                     45deg,
