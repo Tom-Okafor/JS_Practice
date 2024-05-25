@@ -963,7 +963,9 @@
                 top: 12vh;
                 z-index: 2;
                 gap: 7px;
-                backdrop-filter: blur(15px);
+                backdrop-filter: blur(5px);
+                border-radius: 10px;
+                overflow: hidden;
             }
             .menu li {
                 display: flex;
@@ -972,7 +974,8 @@
                 width: 100%;
                 background: var(--color4);
                 border-radius: 5px;
-                box-shadow: 1px 3px 5px #555;
+                /*                 box-shadow: 1px 3px 5px #555;
+ */
                 overflow: hidden;
             }
             .menu a {
@@ -1013,6 +1016,7 @@
                     var(--color5) 35%,
                     var(--color4) 37%
                 );
+                transform: translateY(-50.4px);
             }
             .menu-item:nth-child(2) {
                 background: linear-gradient(
@@ -1021,6 +1025,7 @@
                     var(--color5) 63%,
                     var(--color4) 65%
                 );
+                transform: translateY(-101.8px);
             }
             .menu-item:nth-child(3) {
                 background: linear-gradient(
@@ -1029,6 +1034,7 @@
                     var(--color5) 91%,
                     var(--color4) 93%
                 );
+                transform: translateY(-153.2px);
             }
             .menu-item:nth-child(4) {
                 background: linear-gradient(
@@ -1037,6 +1043,7 @@
                     var(--color5) 91%,
                     var(--color4) 93%
                 );
+                transform: translateY(-204.6px);
             }
             .menu-item:nth-child(5) {
                 background: linear-gradient(
@@ -1045,6 +1052,7 @@
                     var(--color5) 63%,
                     var(--color4) 65%
                 );
+                transform: translateY(-256px);
             }
         </style>
     </head>
