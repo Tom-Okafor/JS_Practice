@@ -1019,6 +1019,17 @@
                 transform: translateY(-50.4px);
                 animation: menu-down-first 2s ease-in-out forwards;
             }
+
+            @keyframes menu-down-first {
+                20%,
+                40%,
+                60%,
+                80%,
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
             .menu-item:nth-child(2) {
                 background: linear-gradient(
                     45deg,
@@ -1029,6 +1040,19 @@
                 transform: translateY(-101.8px);
                 animation: menu-down-second 2s ease-in-out forwards;
             }
+
+            @keyframes menu-down-second {
+                20% {
+                    transform: translateY(-51.4px);
+                }
+                40% {
+                    transform: translateY(-51.4px);
+                }
+                100% {
+                    transform: translateY(-51.4px);
+                }
+            }
+
             .menu-item:nth-child(3) {
                 background: linear-gradient(
                     45deg,
@@ -1039,6 +1063,19 @@
                 transform: translateY(-153.2px);
                 animation: menu-down-third 2s ease-in-out forwards;
             }
+
+            @keyframes menu-down-third {
+                20% {
+                    transform: translateY(-102.8px);
+                }
+                40% {
+                    transform: translateY(-102.8px);
+                }
+                100% {
+                    transform: translateY(-102.8px);
+                }
+            }
+
             .menu-item:nth-child(4) {
                 background: linear-gradient(
                     135deg,
@@ -1049,6 +1086,19 @@
                 transform: translateY(-204.6px);
                 animation: menu-down-fourth 2s ease-in-out forwards;
             }
+
+            @keyframes menu-down-fourth {
+                20% {
+                    transform: translateY(-154 2px);
+                }
+                40% {
+                    transform: translateY(-154.2px);
+                }
+                100% {
+                    transform: translateY(-154.2px);
+                }
+            }
+
             .menu-item:nth-child(5) {
                 background: linear-gradient(
                     135deg,
@@ -1058,6 +1108,18 @@
                 );
                 transform: translateY(-256px);
                 animation: menu-down-fifth 2s ease-in-out forwards;
+            }
+
+            @keyframes menu-down-fifth {
+                20% {
+                    transform: translateY(-205.6px);
+                }
+                40% {
+                    transform: translateY(-205.6px);
+                }
+                100% {
+                    transform: translateY(-205.6px);
+                }
             }
         </style>
     </head>
