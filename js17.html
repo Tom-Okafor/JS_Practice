@@ -956,7 +956,7 @@
             .menu {
                 position: absolute;
                 height: 250px;
-                width: 150px;
+                width: 170px;
                 display: grid;
                 grid-template-columns: 1fr;
                 right: 0;
@@ -966,33 +966,37 @@
                 backdrop-filter: blur(5px);
                 border-radius: 10px;
                 overflow: hidden;
+                padding: 5px 0 0 0;
             }
-            .menu li {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .menu-item {
                 width: 100%;
-                background: var(--color4);
-                border-radius: 5px;
-                /*                 box-shadow: 1px 3px 5px #555;
- */
+                box-shadow: 1px 3px 5px #555;
                 overflow: hidden;
+                transition: all 0.5s ease-in-out;
+            }
+            .menu li:nth-child(odd) {
+                border-radius: 10px 5px;
+            }
+            .menu li:nth-child(even) {
+                border-radius: 5px 15px;
             }
             .menu a {
                 width: 100%;
                 height: 100%;
                 text-align: left;
-                padding-left: 0.4em;
-                line-height: 50px;
+                padding-left: 1em;
                 color: var(--color5);
                 font-size: 0.7em;
-                font-weight: 600;
+                font-weight: 500;
                 font-family: "Lumanosimo";
                 letter-spacing: 1.5px;
                 background: #00000035;
                 border-radius: 5px;
                 transform: translateY(4em);
                 animation: rise 1s ease-in-out forwards;
+                display: flex;
+                align-items: center;
+                transition: all 0.5s ease-in-out;
             }
 
             @keyframes rise {
@@ -1134,6 +1138,20 @@
                     transform: translateY(0px);
                 }
             }
+            .menu-item span {
+                margin-right: 1em;
+            }
+
+            .menu-item img {
+                width: 1.8em;
+            }
+            .menu-item a:hover {
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+            .blur-menu-item {
+                filter: blur(3px);
+            }
         </style>
     </head>
     <body>
@@ -1154,19 +1172,40 @@
                 </li>
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#about">about</a>
+                        <a href="#about"
+                            ><span><img src="/about-svgrepo-com.svg" /></span
+                            >about</a
+                        >
                     </li>
                     <li class="menu-item">
-                        <a href="#features">features</a>
+                        <a href="#features"
+                            ><span><img src="/features-svgrepo-com.svg" /></span
+                            >features</a
+                        >
                     </li>
                     <li class="menu-item">
-                        <a href="#carousel">carousel</a>
+                        <a href="#carousel"
+                            ><span
+                                ><img
+                                    src="/carousel-video-svgrepo-com.svg" /></span
+                            >carousel</a
+                        >
                     </li>
                     <li class="menu-item">
-                        <a href="#testimonial">testimonial</a>
+                        <a href="#testimonial"
+                            ><span
+                                ><img
+                                    src="/rating-star-svgrepo-com.svg" /></span
+                            >testimonials</a
+                        >
                     </li>
                     <li class="menu-item">
-                        <a href="#contact">contact</a>
+                        <a href="#contact"
+                            ><span
+                                ><img
+                                    src="/contact-book-svgrepo-com.svg" /></span
+                            >contact</a
+                        >
                     </li>
                 </ul>
             </ul>
