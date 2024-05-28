@@ -956,7 +956,7 @@
             .menu {
                 position: absolute;
                 height: 250px;
-                width: 170px;
+                width: 150px;
                 display: grid;
                 grid-template-columns: 1fr;
                 right: 0;
@@ -968,14 +968,17 @@
                 overflow: hidden;
                 padding: 5px 0 0 0;
             }
+            .menu-grid {
+                disply: grid;
+            }
             .menu-item {
                 width: 100%;
                 box-shadow: 1px 3px 5px #555;
                 overflow: hidden;
-                transition: all 0.5s ease-in-out;
+                transition: all 1s ease-in-out;
             }
             .menu li:nth-child(odd) {
-                border-radius: 10px 5px;
+                border-radius: 15px 5px;
             }
             .menu li:nth-child(even) {
                 border-radius: 5px 15px;
@@ -1170,7 +1173,7 @@
                     <div class="lineTwo"></div>
                     <div class="lineThree"></div>
                 </li>
-                <ul class="menu">
+                <ul class="menu menu-grid">
                     <li class="menu-item">
                         <a href="#about"
                             ><span><img src="/about-svgrepo-com.svg" /></span
