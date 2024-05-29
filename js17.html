@@ -964,7 +964,23 @@
                 z-index: 2;
                 gap: 7px;
                 backdrop-filter: blur(5px);
+                transform: translateY(-200%);
                 overflow: hidden;
+            }
+
+            .menu-grid {
+                display: grid;
+            }
+            .menu-reveal {
+                animation: drop 0.8s ease-in-out forwards;
+            }
+            @keyframes drop {
+                to {
+                    transform: translateY(0%);
+                }
+            }
+
+            .menu-remove {
                 animation: lift 0.8s ease-in-out forwards;
                 animation-delay: 0.6s;
             }
@@ -975,9 +991,6 @@
                 }
             }
 
-            .menu-grid {
-                display: grid;
-            }
             .menu-item {
                 width: 100%;
                 box-shadow: 1px 3px 5px #555;
@@ -1003,10 +1016,14 @@
                 background: #00000035;
                 border-radius: 5px;
                 transform: translateY(4em);
-                animation: rise 1s ease-in-out forwards;
                 display: flex;
                 align-items: center;
                 transition: all 0.5s ease-in-out;
+            }
+
+            .menu-link-reveal {
+                animation: rise 1s ease-in-out forwards;
+                animation-delay: 0.8s;
             }
 
             @keyframes rise {
@@ -1022,6 +1039,23 @@
                     transform: translateY(0);
                 }
             }
+            .menu-link-retract {
+                animation: slide-in 1s ease-in-out forwards;
+            }
+
+            @keyframes slide-in {
+                0% {
+                    background: #00000035;
+                    transform: translateY(0);
+                }
+                40% {
+                    background: transparent;
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(4em);
+                }
+            }
 
             .menu-item:first-child {
                 background: linear-gradient(
@@ -1030,9 +1064,15 @@
                     var(--color5) 35%,
                     var(--color4) 37%
                 );
-                /* transform: translateY(-50.4px);
-                animation: menu-down-first 0.5s ease-in forwards;*/
+                transform: translateY(-50.4px);
+            }
+            .menu-down1 {
+                animation: menu-down-first 0.8s ease-in forwards;
+                animation-delay: 0.8s;
+            }
+            .menu-up1 {
                 animation: menu-up-first 0.8s ease-in forwards;
+                animation-delay: 0.8s;
             }
 
             @keyframes menu-down-first {
@@ -1064,9 +1104,16 @@
                     var(--color5) 59%,
                     var(--color4) 61%
                 );
-                /*  transform: translateY(-101.8px);
-                animation: menu-down-second 0.5s ease-in forwards;*/
+                transform: translateY(-101.8px);
+            }
+
+            .menu-down2 {
+                animation: menu-down-second 0.8s ease-in forwards;
+                animation-delay: 0.8s;
+            }
+            .menu-up2 {
                 animation: menu-up-second 0.8s ease-in forwards;
+                animation-delay: 0.8s;
             }
 
             @keyframes menu-down-second {
@@ -1103,9 +1150,16 @@
                     var(--color5) 82%,
                     var(--color4) 84%
                 );
-                /*  transform: translateY(-153.2px);
-                animation: menu-down-third 0.5s ease-in forwards;*/
+                transform: translateY(-153.2px);
+            }
+
+            .menu-down3 {
+                animation: menu-down-third 0.8s ease-in forwards;
+                animation-delay: 0.8s;
+            }
+            .menu-up3 {
                 animation: menu-up-third 0.8s ease-in forwards;
+                animation-delay: 0.8s;
             }
 
             @keyframes menu-down-third {
@@ -1145,9 +1199,16 @@
                     var(--color5) 82%,
                     var(--color4) 84%
                 );
-                /*   transform: translateY(-204.6px);
-              animation: menu-down-fourth 0.5s ease-in forwards; */
+                transform: translateY(-204.6px);
+            }
+
+            .menu-down4 {
+                animation: menu-down-fourth 0.8s ease-in forwards;
+                animation-delay: 0.8s;
+            }
+            .menu-up4 {
                 animation: menu-up-fourth 0.8s ease-in forwards;
+                animation-delay: 0.8s;
             }
 
             @keyframes menu-down-fourth {
@@ -1196,9 +1257,16 @@
                 );
                 border-radius: 10px 5px 0 0;
 
-                /*  transform: translateY(-256px);
-               animation: menu-down-fifth 0.5s ease-in forwards; */
+                transform: translateY(-256px);
+            }
+
+            .menu-down5 {
+                animation: menu-down-fifth 0.8s ease-in forwards;
+                animation-delay: 0.8s;
+            }
+            .menu-up5 {
                 animation: menu-up-fifth 0.8s ease-in forwards;
+                animation-delay: 0.8s;
             }
 
             @keyframes menu-down-fifth {
@@ -1271,7 +1339,7 @@
                     <div class="lineTwo"></div>
                     <div class="lineThree"></div>
                 </li>
-                <ul class="menu menu-grid">
+                <ul class="menu">
                     <li class="menu-item">
                         <a href="#about"
                             ><span><img src="/about-svgrepo-com.svg" /></span
