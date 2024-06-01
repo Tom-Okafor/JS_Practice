@@ -534,7 +534,7 @@
             .box::before {
                 content: "";
                 position: absolute;
-                height: 140%;
+                height: 300%;
                 width: 120px;
                 background: var(--color6);
                 background: linear-gradient(var(--color6) 50%, mintcream 50%);
@@ -1339,6 +1339,16 @@
             @media screen and (min-width: 600px) {
                 body {
                     padding: 3em;
+                }
+                .intro img {
+                    width: 81vw;
+                }
+                .box {
+                    width: 85vw;
+                    height: 85vw;
+                }
+                .box::before{
+                  width: 200px;
                 }
             }
         </style>
