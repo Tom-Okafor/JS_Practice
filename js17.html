@@ -71,7 +71,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 animation: revealBackground 1s ease-out forwards;
-                animation-timeline: view(500px 250px);
+                animation-delay: 0.8s;
             }
 
             @keyframes revealBackground {
@@ -106,7 +106,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 animation: revealBackgroundToo 2s ease-out forwards;
-                animation-timeline: view(500px 250px);
+                animation-delay: 0.5s;
             }
 
             @keyframes revealBackgroundToo {
@@ -1366,6 +1366,12 @@
                 .box-note {
                     margin-top: 0.95em;
                     font-size: 1em;
+                }
+
+                h1 {
+                    font-size: 3.6em;
+                    line-height: 1.3em;
+                    letter-spacing: 5px;
                 }
             }
         </style>
