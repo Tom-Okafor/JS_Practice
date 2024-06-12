@@ -529,7 +529,17 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                box-shadow: 2px 2px 12px #777;
+                box-shadow: 2px 2px 4px #666;
+                transition-property: filter, opacity;
+                transition-duration: 1s;
+                transition-timing-function: linear;
+            }
+
+            @starting-style {
+                .box {
+                    opacity: 0.3;
+                    filter: blur(10px);
+                }
             }
             .box::before {
                 content: "";
