@@ -475,10 +475,6 @@
                 word-spacing: 0.15em;
                 margin-bottom: 1.5em;
             }
-            /*   .about p {
-                text-indent: 2em;
-            } */
-
             .about > p {
                 margin-left: 1em;
                 margin-right: auto;
@@ -496,7 +492,7 @@
 
             .intro,
             .about,
-            .features {
+            .features, .carousel {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -610,7 +606,7 @@
                 position: absolute;
                 z-index: -1;
                 height: 105%;
-                width: 78vw;
+                width: 105%;
                 background: conic-gradient(
                     #3788cc 53deg,
                     var(--color2) 53deg,
@@ -648,8 +644,8 @@
             }
 
             article {
-                margin: 2em 0 8em 0;
-            }
+                margin: 2em 0 3em 0;
+            } 
             article:nth-of-type(4) {
                 margin-bottom: 0em;
             }
@@ -1559,7 +1555,11 @@
                 }
                 
                 .features h3{
-                  font-size: 2.5em;
+                  font-size: 2.8em;
+                }
+                .article-div{
+                  max-width: 500px;
+                  height: 450px;
                 }
             }
         </style>
