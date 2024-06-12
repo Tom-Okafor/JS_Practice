@@ -1419,8 +1419,240 @@
                     width: 3.2em;
                     margin-left: 1em;
                 }
-                .pLine{
-                  margin-right: .3em;
+                .pLine {
+                    margin-right: 0.3em;
+                }
+
+                .menu-holder {
+                    gap: 0.35em;
+                }
+
+                .lineTwo {
+                    height: 0.16em;
+                    width: 3.2em;
+                    background: var(--color4);
+                }
+                .lineOne {
+                    height: 0.165em;
+                    width: 1.97em;
+                    background: var(--color6);
+                }
+                .lineThree {
+                    height: 0.16em;
+                    width: 1.62em;
+                    background: var(--color6);
+                }
+
+                @keyframes animateMenu {
+                    48% {
+                        flex-direction: column;
+                    }
+                    50% {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+                    60% {
+                        gap: 1em;
+                    }
+                    100% {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: baseline;
+                        gap: 0.25em;
+                    }
+                }
+                @keyframes animateLineTwo {
+                    40% {
+                        opacity: 0;
+                        height: 0.155em;
+                        width: 2.7em;
+                        transform: translateX(-5em);
+                    }
+
+                    45% {
+                        transform: translateX(0em);
+                    }
+                    60% {
+                        width: 0.155em;
+                        height: 2.7em;
+                        opacity: 0;
+                    }
+                    80% {
+                        transform: translateY(-1em);
+                    }
+                    100% {
+                        width: 0.155em;
+                        height: 2.7em;
+                        opacity: 1;
+                        transform: translateY(0em);
+                    }
+                }
+                @keyframes animateLineThree {
+                    40% {
+                        transform: translateX(10em);
+                        opacity: 0;
+                        height: 0.15em;
+                        width: 1.3em;
+                    }
+                    45% {
+                        transform: translateX(0em);
+                    }
+                    60% {
+                        width: 0.15em;
+                        height: 1.3em;
+                        opacity: 0;
+                    }
+                    80% {
+                        transform: translateY(1em);
+                    }
+                    100% {
+                        width: 0.15em;
+                        height: 1.3em;
+                        opacity: 1;
+                        transform: translateY(0em);
+                    }
+                }
+                @keyframes animateLineOne {
+                    40% {
+                        transform: translateX(10em);
+                        opacity: 0;
+                        height: 0.15em;
+                        width: 1.8em;
+                    }
+                    45% {
+                        transform: translateX(0em);
+                    }
+                    60% {
+                        width: 0.15em;
+                        height: 1.8em;
+                        opacity: 0;
+                    }
+                    80% {
+                        transform: translateY(1em);
+                    }
+                    100% {
+                        width: 0.15em;
+                        height: 1.8em;
+                        opacity: 1;
+                        transform: translateY(0em);
+                    }
+                }
+                @keyframes reverseMenu {
+                    48% {
+                        flex-direction: row;
+                    }
+                    50% {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                    }
+                    60% {
+                        gap: 1em;
+                    }
+                    100% {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        gap: 0.25em;
+                    }
+                }
+
+                .lineTwoReverse {
+                    animation: reverseLineTwo 1s
+                        cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+                    animation-delay: 3s;
+                }
+
+                @keyframes reverseLineTwo {
+                    40% {
+                        opacity: 0;
+                        width: 0.155em;
+                        height: 2.7em;
+                        transform: translateY(-5em);
+                    }
+
+                    45% {
+                        transform: translateX(0em);
+                    }
+                    60% {
+                        height: 0.155em;
+                        width: 2.7em;
+                        opacity: 0;
+                    }
+                    80% {
+                        transform: translateX(-5em);
+                    }
+                    100% {
+                        height: 0.155em;
+                        width: 2.7em;
+                        opacity: 1;
+                        transform: translateX(0em);
+                    }
+                }
+
+                .lineThreeReverse {
+                    animation: reverseLineThree 1.3s
+                        cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+                    animation-delay: 3s;
+                }
+
+                @keyframes reverseLineThree {
+                    40% {
+                        transform: translateY(3em);
+                        opacity: 0;
+                        width: 0.15em;
+                        height: 1.3em;
+                    }
+                    45% {
+                        transform: translateY(0em);
+                    }
+                    60% {
+                        height: 0.15em;
+                        width: 1.3em;
+                        opacity: 0;
+                    }
+                    80% {
+                        transform: translateX(3em);
+                    }
+                    100% {
+                        height: 0.15em;
+                        width: 1.3em;
+                        opacity: 1;
+                        transform: translateX(0em);
+                    }
+                }
+
+                .lineOneReverse {
+                    animation: reverseLineOne 1.6s
+                        cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+                    animation-delay: 3s;
+                }
+
+                @keyframes reverseLineOne {
+                    40% {
+                        transform: translateY(3em);
+                        opacity: 0;
+                        width: 0.15em;
+                        height: 1.8em;
+                    }
+                    45% {
+                        transform: translateY(0em);
+                    }
+                    60% {
+                        height: 0.15em;
+                        width: 1.8em;
+                        opacity: 0;
+                    }
+                    80% {
+                        transform: translateX(5em);
+                    }
+                    100% {
+                        height: 0.15em;
+                        width: 1.8em;
+                        opacity: 1;
+                        transform: translateX(0em);
+                    }
                 }
             }
         </style>
