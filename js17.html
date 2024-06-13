@@ -132,8 +132,8 @@
                 align-items: center;
                 position: relative;
             }
-            .for-larger-devices{
-              display: none;
+            .for-larger-devices {
+                display: none;
             }
             header li {
                 display: inline;
@@ -547,7 +547,8 @@
                 height: 300%;
                 width: 120px;
                 background: var(--color6);
-                background: linear-gradient(var(--color6) 50%, mintcream 50%);
+                /*                 background: linear-gradient(var(--color6) 50%, mintcream 50%);
+   */
                 animation: move 5s linear infinite forwards;
             }
 
@@ -1599,24 +1600,53 @@
                     border-color: var(--color5);
                 }
             }
-            
-            @media screen and (min-width: 1000px){
-              
-              body{
-                padding-top: 2em;
-              }
-              
-              .for-smaller-devices{
-                display: none;
-              }
-              .for-larger-devices{
-                display: block;
-              }
-              
-              header{
-                border-bottom: 0;
-              }
-              
+
+            @media screen and (min-width: 1000px) {
+                body {
+                    padding-top: 2em;
+                }
+
+                .for-smaller-devices {
+                    display: none;
+                }
+                .for-larger-devices {
+                    display: block;
+                }
+
+                header {
+                    border-bottom: 0;
+                    max-width: 1000px;
+                    margin-inline: auto;
+                }
+
+                .menu-for-larger-screens {
+                    display: flex;
+                    width: 60%;
+                    height: 60%;
+                    justify-content: space-around;
+                }
+
+                .menu-item-larger-scrn {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                }
+                .menu-item-larger-scrn a {
+                    color: var(--color2);
+                    font-size: 1em;
+                    font-family: "Lumanosimo";
+                }
+                .box{
+                  max-width: 800px;
+                  max-height: 650px;
+                }
+                .box img{
+                  width: 95.555%;
+                }
+                
+                .box-note{
+                  font-size: 1.5em;
+                }
             }
         </style>
     </head>
@@ -1687,23 +1717,21 @@
                         </li>
                     </ul>
                 </li>
-                <ul class="menu">
-                    <li class="menu-item">
+                <ul class="menu-for-larger-screens">
+                    <li class="menu-item-larger-scrn">
                         <a href="#about">about</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item-larger-scrn">
                         <a href="#features">features</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item-larger-scrn">
                         <a href="#carousel">carousel</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item-larger-scrn">
                         <a href="#testimonial">testimonials</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#contact"
-                            >contact</a
-                        >
+                    <li class="menu-item-larger-scrn">
+                        <a href="#contact">contact</a>
                     </li>
                 </ul>
             </ul>
