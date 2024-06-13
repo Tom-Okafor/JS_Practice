@@ -1635,17 +1635,37 @@
                     color: var(--color2);
                     font-size: 1em;
                     font-family: "Lumanosimo";
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 }
-                .box{
-                  max-width: 800px;
-                  max-height: 650px;
+                .box {
+                    max-width: 800px;
+                    max-height: 650px;
                 }
-                .box img{
-                  width: 95.555%;
+                .box img {
+                    width: 95.555%;
                 }
-                
-                .box-note{
-                  font-size: 1.5em;
+
+                .box-note {
+                    font-size: 1.5em;
+                }
+                .linkUnderline{
+                  height: 3px;
+                  width: 0;
+                  opacity: 0;
+                  background-color: var(--color2);
+                  margin-top: 5px;
+                  transition: width 1s ease-in-out;
+                  border-radius: 3px;
+                }
+                .menu-item-larger-scrn a:hover .linkUnderline{
+                  width: 100%;
+                  opacity: 1;
+                }
+                .menu-item-larger-scrn a:hover{
+                  text-transform: uppercase;
                 }
             }
         </style>
@@ -1719,19 +1739,33 @@
                 </li>
                 <ul class="menu-for-larger-screens">
                     <li class="menu-item-larger-scrn">
-                        <a href="#about">about</a>
+                        <a href="#about">about
+                                                <div class="linkUnderline"></div>
+</a>
                     </li>
                     <li class="menu-item-larger-scrn">
-                        <a href="#features">features</a>
+                        <a href="#features">features
+                                                                        <div class="linkUnderline"></div>
+</a>
+
                     </li>
                     <li class="menu-item-larger-scrn">
-                        <a href="#carousel">carousel</a>
+                        <a href="#carousel">carousel
+                        <div class="linkUnderline"></div></a>
+                                                
+
                     </li>
                     <li class="menu-item-larger-scrn">
-                        <a href="#testimonial">testimonials</a>
+                        <a href="#testimonial">testimonials
+                                                                        <div class="linkUnderline"></div>
+</a>
+
                     </li>
                     <li class="menu-item-larger-scrn">
-                        <a href="#contact">contact</a>
+                        <a href="#contact">contact
+                                                                        <div class="linkUnderline"></div>
+</a>
+
                     </li>
                 </ul>
             </ul>
