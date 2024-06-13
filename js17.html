@@ -492,7 +492,8 @@
 
             .intro,
             .about,
-            .features, .carousel {
+            .features,
+            .carousel {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -645,7 +646,7 @@
 
             article {
                 margin: 2em 0 3em 0;
-            } 
+            }
             article:nth-of-type(4) {
                 margin-bottom: 0em;
             }
@@ -940,7 +941,6 @@
                 gap: 2em;
                 padding: 1em;
                 text-align: center;
-              
             }
             .testimonial-block img {
                 height: 150px;
@@ -1471,11 +1471,10 @@
                         width: 0.16em;
                         height: 2em;
                     }
-                 
+
                     100% {
                         width: 0.16em;
                         height: 2em;
-                       
                     }
                 }
                 @keyframes animateLineOne {
@@ -1487,7 +1486,7 @@
                         width: 0.16em;
                         height: 2.45em;
                     }
-                  
+
                     100% {
                         width: 0.16em;
                         height: 2.45em;
@@ -1498,8 +1497,6 @@
                         gap: 0.35em;
                     }
                 }
-
-               
 
                 @keyframes reverseLineTwo {
                     40% {
@@ -1518,13 +1515,12 @@
                     }
                 }
 
-
                 @keyframes reverseLineThree {
                     40% {
                         width: 0.16em;
                         height: 2em;
                     }
-                  
+
                     60% {
                         height: 0.16em;
                         width: 2em;
@@ -1534,8 +1530,6 @@
                         width: 2em;
                     }
                 }
-
-
 
                 @keyframes reverseLineOne {
                     40% {
@@ -1552,34 +1546,56 @@
                     }
                 }
                 h3 {
-                  font-size: 2.2em;
+                    font-size: 2.2em;
                 }
-                
-                .features h3{
-                  font-size: 2.8em;
-                }
-                .article-div{
-                  max-width: 500px;
-                  height: 450px;
-                }
-                
-            .testimonial-block p {
-             max-width: 60ch;
-              
-            }
-            .testimonial-block img {
-                height: 200px;
-                width: 200px;
-              
-            }
-            .testimonial-block h4 {
-                font-size: 1.45em;
 
-            }
-            form {
-              max-width: 400px;
-              margin-inline: auto;
-            }
+                .features h3 {
+                    font-size: 2.8em;
+                }
+                .article-div {
+                    max-width: 500px;
+                    height: 450px;
+                }
+
+                .testimonial-block p {
+                    max-width: 60ch;
+                }
+                .testimonial-block img {
+                    height: 200px;
+                    width: 200px;
+                }
+                .testimonial-block h4 {
+                    font-size: 1.45em;
+                }
+                form {
+                    max-width: 400px;
+                    height: 95%;
+                    background: #00000029;
+                    backdrop-filter: blur(15px);
+                    margin-left: 3em;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                .form {
+                    background-image: url("/image.jpeg");
+                    background-size: cover;
+                    border-radius: 10px;
+                    width: 100vw;
+                    margin-left: -3em;
+                    display: grid;
+                    margin-bottom: 0.5em;
+                }
+                label,
+                legend {
+                    color: var(--color5);
+                    font-weight: bolder;
+                    font-size: 1em;
+                }
+                fieldset {
+                    border-color: var(--color5);
+                }
             }
         </style>
     </head>
