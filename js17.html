@@ -132,6 +132,9 @@
                 align-items: center;
                 position: relative;
             }
+            .for-larger-devices{
+              display: none;
+            }
             header li {
                 display: inline;
             }
@@ -1347,11 +1350,11 @@
                 body {
                     padding: 3em;
                 }
-                
-                header{
-                  height: 85px;
+
+                header {
+                    height: 85px;
                 }
-                
+
                 .box img {
                     width: 81vw;
                     height: 95%;
@@ -1596,10 +1599,29 @@
                     border-color: var(--color5);
                 }
             }
+            
+            @media screen and (min-width: 1000px){
+              
+              body{
+                padding-top: 2em;
+              }
+              
+              .for-smaller-devices{
+                display: none;
+              }
+              .for-larger-devices{
+                display: block;
+              }
+              
+              header{
+                border-bottom: 0;
+              }
+              
+            }
         </style>
     </head>
     <body>
-        <header>
+        <header class="for-smaller-devices">
             <ul>
                 <li class="brand-holder">
                     <ul class="brand">
@@ -1648,6 +1670,38 @@
                             ><span
                                 ><img
                                     src="/contact-book-svgrepo-com1.svg" /></span
+                            >contact</a
+                        >
+                    </li>
+                </ul>
+            </ul>
+        </header>
+
+        <header class="for-larger-devices">
+            <ul>
+                <li class="brand-holder">
+                    <ul class="brand">
+                        <li><img src="furniture-svgrepo-com.svg" /></li>
+                        <li>
+                            <span>fun</span><span class="span">-</span>iture
+                        </li>
+                    </ul>
+                </li>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#about">about</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#features">features</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#carousel">carousel</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#testimonial">testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact"
                             >contact</a
                         >
                     </li>
