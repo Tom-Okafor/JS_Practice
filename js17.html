@@ -1618,6 +1618,33 @@
                     max-width: 1000px;
                     margin-inline: auto;
                 }
+                
+                .header-lines{
+                  display: flex;     
+                  margin-top: 1.5em;
+                  justify-content: space-between;
+
+                }
+                
+                .header-line{
+                  height: 2px;
+                  width: 0%;
+                  background: linear-gradient(to right, var(--color2), var(--color6));
+                  animation: drawLine 1s ease-in-out both;
+                  animation-timeline: scroll();
+                  animation-range-start: 0px;
+                  animation-range-end: 80px;
+                }
+                .header-line:nth-child(2){ background: linear-gradient(to right, var(--color6), var(--color2));
+                }
+
+                @keyframes drawLine{
+                  to{
+                    width: 50%;
+                  }
+                }
+
+
 
                 .menu-for-larger-screens {
                     display: flex;
@@ -1641,9 +1668,21 @@
                     align-items: center;
                 }
                 .box {
-                    max-width: 800px;
-                    max-height: 650px;
+                  width: 400px;
+                  height: 400px;
+                  animation: expandBox 1s ease-in-out both;
+                  animation-timeline: scroll();
+                  animation-range-start: 0px;
+                  animation-range-end: 200px;
                 }
+                
+                @keyframes expandBox{
+                  to{
+                    width: 800px;
+                 height: 650px;
+                  }
+                }
+                
                 .box img {
                     width: 95.555%;
                 }
@@ -1769,6 +1808,10 @@
                     </li>
                 </ul>
             </ul>
+            <div class="header-lines">
+              <div class="header-line"></div>
+              <div class="header-line"></div>
+              </div>
         </header>
         <section class="intro" id="intro">
             <div class="boxHolder">
