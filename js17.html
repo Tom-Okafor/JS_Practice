@@ -518,6 +518,7 @@
                 margin-right: auto;
                 margin-bottom: 0;
                 font-size: 2em;
+                margin-left: .5em;
             }
 
             .box {
@@ -1757,7 +1758,7 @@
                     right: 0;
                     border-radius: 40px;
                     background-image: url('/aboutImage.jpeg');
-                    background-size: 375.1274px 650px;
+                    background-size: 375.1274px 700px;
                     background-position: center;
                     transition: all 1s ease-in-out;
                     animation: scrollImage 1s ease-in-out both;
@@ -1775,12 +1776,40 @@
                 }
                 
                 .aboutImage:hover{
-                  background-size: 375.1274px 500px;
+                  background-size: 375.1274px 600px;
                 }
                 
                 .about{
                   position: relative;
                 }
+                
+                h3{
+                  font-size: 2.5em;
+                }
+                section:nth-of-type(3) h3{
+                  font-size: 3em;
+                  margin-bottom: .7em;
+                  margin-left: 0;
+                }
+                
+                .article-holder{
+                  margin-right: auto;
+                  display: grid;
+                  width: 100%;
+                  grid-template-columns: 450px 450px;
+                  column-gap: 100px;
+                }
+                
+                .article-div{
+                  max-width: 420px;
+                  height: 420px;
+                  left: 1vw;
+                }
+                
+                article p{
+                  max-width: 45ch;
+                }
+                
                 
             }
         </style>
@@ -2220,7 +2249,8 @@
 
         <section class="features" id="features">
             <h3 class="">features:</h3>
-            <article>
+            <div class="article-holder">
+                  <article>
                 <div class="article-div">
                     <img src="livingroom.jpeg" alt="..." />
                 </div>
@@ -2274,6 +2304,8 @@
                 </div>
             </article>
 
+            </div>
+        
             <div class="icon-display">
                 <div class="display-box"></div>
                 <div class="display-box"></div>
