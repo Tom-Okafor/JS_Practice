@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>TYPE COPY PASTE</title>
+        <style>
+            label {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+            a {
+                display: block;
+                width: fit-content;
+                padding: 0.3rem;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 0.5rem 0;
+            }
+            .reversedText {
+                width: 75vw;
+                height: 150px;
+                border: 1.5px solid black;
+                border-radius: 10px;
+                overflow: scroll;
+            }
+
+            section {
+                margin-top: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WORD APPEAR!</h1>
+        <p>
+            Type a word, a phrase or sentence, copy it, and watch it all get
+            spelt backwards when you paste it.
+        </p>
+
+        <label for="textbox">Type your text here</label>
+        <textarea id="textbox" cols="35" rows="7"></textarea>
+        <a href="#">copy your text</a>
+
+        <section>
+            <div class="reversedText"></div>
+            <a href="#">click to paste</a>
+        </section>
+        <script>
+            (function () {})();
+        </script>
+    </body>
+</html>
